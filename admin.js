@@ -241,7 +241,8 @@ function openEditor(item) {
     document.getElementById('editId').value = item.id;
     document.getElementById('editName').value = item.name;
     document.getElementById('editCategory').value = item.category;
-    document.getElementById('editImage').value = item.imagePlaceholder;
+    document.getElementById('editImageUrl').value = item.imageUrl || '';
+    document.getElementById('editImage').value = item.imagePlaceholder || '';
     document.getElementById('editTag').value = item.tag;
     document.getElementById('editFeatured').checked = item.isFeatured;
     document.getElementById('editDesc').value = item.description;
@@ -252,6 +253,7 @@ function openEditor(item) {
     document.getElementById('editId').value = '';
     document.getElementById('editName').value = '';
     document.getElementById('editCategory').value = 'saas';
+    document.getElementById('editImageUrl').value = '';
     document.getElementById('editImage').value = '';
     document.getElementById('editTag').value = '';
     document.getElementById('editFeatured').checked = false;
@@ -300,6 +302,7 @@ function getEditorData() {
     id: document.getElementById('editId').value,
     name: document.getElementById('editName').value.trim(),
     category: document.getElementById('editCategory').value,
+    imageUrl: document.getElementById('editImageUrl').value.trim(),
     imagePlaceholder: document.getElementById('editImage').value.trim(),
     tag: document.getElementById('editTag').value.trim(),
     isFeatured: document.getElementById('editFeatured').checked,

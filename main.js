@@ -60,10 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
             linksHtml += `<a href="${link.url}" target="_blank" rel="noopener" class="project-link${secClass}">${link.text}</a>\n`;
           });
 
+          let thumbHtml = '';
+          if (item.imageUrl) {
+            thumbHtml = `<img src="${item.imageUrl}" alt="${item.name}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" />`;
+          } else {
+            thumbHtml = `<div class="project-thumb-placeholder">${item.imagePlaceholder}</div>`;
+          }
+
           const cardHtml = `
             <div class="project-card ${featuredClass}" data-category="${item.category}" id="card-${item.id}">
               <div class="project-thumb">
-                <div class="project-thumb-placeholder">${item.imagePlaceholder}</div>
+                ${thumbHtml}
               </div>
               <div class="project-info">
                 <span class="project-tag">${item.tag}</span>
