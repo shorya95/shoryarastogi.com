@@ -182,10 +182,16 @@
         </div>
         
         <div class="form-row">
-          <div class="form-group">
+          <div class="form-group" style="flex: 2;">
             <label class="form-label">Image URL (e.g. assets/my-image.jpg or https://...)</label>
             <input type="text" id="editImageUrl" class="form-input" placeholder="Leave empty to use placeholder text" />
           </div>
+          <div class="form-group" style="flex: 1;">
+            <label class="form-label">Or Upload Image</label>
+            <input type="file" id="editImageUpload" class="form-input" accept="image/*" style="padding: 10px; cursor: pointer;" />
+          </div>
+        </div>
+        <div class="form-row">
           <div class="form-group">
             <label class="form-label">Image Placeholder Text (Fallback)</label>
             <input type="text" id="editImage" class="form-input" required />

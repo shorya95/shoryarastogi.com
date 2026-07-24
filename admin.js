@@ -120,6 +120,40 @@ async function saveToGitHub(newContentJson) {
   }
 }
 
+async function uploadImageToGitHub(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+      try {
+        const base64Data = e.target.result.split(',')[1];
+        const cleanName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '');
+        const timestamp = new Date().getTime();
+        const filePath = `assets/portfolio/${timestamp}_${cleanName}`;
+        
+        const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `token ${githubToken}`,
+            'Accept': 'application/vnd.github.v3+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            message: `Upload image: ${filePath}`,
+            content: base64Data
+          })
+        });
+        
+        if (!res.ok) throw new Error('Failed to upload image');
+        resolve(filePath);
+      } catch (err) {
+        reject(err);
+      }
+    };
+    reader.onerror = () => reject(new Error('File reading error'));
+    reader.readAsDataURL(file);
+  });
+}
+
 // ── EVENT LISTENERS ──────────────────────────────────────
 loginBtn.addEventListener('click', async () => {
   const token = ghTokenInput.value.trim();
@@ -160,6 +194,26 @@ saveBtn.addEventListener('click', async () => {
   showLoader();
   saveBtn.disabled = true;
   saveBtn.textContent = 'Saving...';
+  
+  const fileInput = document.getElementById('editImageUpload');
+  const file = fileInput.files[0];
+  
+  if (file) {
+    try {
+      saveBtn.textContent = 'Uploading Image...';
+      const uploadedPath = await uploadImageToGitHub(file);
+      document.getElementById('editImageUrl').value = uploadedPath;
+    } catch (err) {
+      console.error(err);
+      alert('Failed to upload image to GitHub.');
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save to GitHub';
+      hideLoader();
+      return;
+    }
+  }
+  
+  saveBtn.textContent = 'Saving Data...';
   
   const updatedItem = getEditorData();
   const isNew = !document.getElementById('editId').value;
@@ -235,6 +289,7 @@ function renderDashboard() {
 // ── EDITOR LOGIC ─────────────────────────────────────────
 function openEditor(item) {
   linksContainer.innerHTML = ''; // clear links
+  document.getElementById('editImageUpload').value = '';
   
   if (item) {
     document.getElementById('editorTitle').textContent = 'Edit Project';
