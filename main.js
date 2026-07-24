@@ -44,109 +44,158 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // ── PORTFOLIO TAB FILTERING + PAGINATION ──────────────────
-  const tabBtns       = document.querySelectorAll('.tab-btn');
-  const projectCards  = document.querySelectorAll('.project-card');
-  const pagination    = document.getElementById('portfolioPagination');
-  const pagesEl       = document.getElementById('paginationPages');
-  const prevBtn       = document.getElementById('paginationPrev');
-  const nextBtn       = document.getElementById('paginationNext');
+  // ── PORTFOLIO FETCHING + RENDERING ────────────────────────
+  const portfolioGrid = document.querySelector('.portfolio-grid');
+  if (portfolioGrid) {
+    fetch('portfolio.json')
+      .then(res => res.json())
+      .then(data => {
+        portfolioGrid.innerHTML = ''; // Clear loading state if any
+        data.forEach(item => {
+          const featuredClass = item.isFeatured ? 'featured-card' : '';
+          
+          let linksHtml = '';
+          item.links.forEach(link => {
+            const secClass = link.isSecondary ? ' secondary' : '';
+            linksHtml += `<a href="${link.url}" target="_blank" rel="noopener" class="project-link${secClass}">${link.text}</a>\n`;
+          });
 
-  const ITEMS_PER_PAGE = 5; // 1 featured (span-2) + 1 regular on row 1, then 3 on row 2
-  let currentFilter    = 'all';
-  let currentPage      = 1;
-
-  function getFilteredCards() {
-    return [...projectCards].filter(card =>
-      currentFilter === 'all' || card.dataset.category === currentFilter
-    );
-  }
-
-  function renderPage() {
-    const filtered   = getFilteredCards();
-    const isAll      = currentFilter === 'all';
-    const totalPages = isAll ? Math.ceil(filtered.length / ITEMS_PER_PAGE) : 1;
-
-    currentPage = Math.min(Math.max(1, currentPage), totalPages);
-
-    const start = isAll ? (currentPage - 1) * ITEMS_PER_PAGE : 0;
-    const end   = isAll ? start + ITEMS_PER_PAGE : filtered.length;
-
-    const pageSlice = filtered.slice(start, end);
-
-    // Clear all page-featured assignments
-    projectCards.forEach(card => card.classList.remove('page-featured'));
-
-    // Show/hide + animate
-    projectCards.forEach(card => {
-      const inFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
-      const idx      = filtered.indexOf(card);
-      const inPage   = idx >= start && idx < end;
-      const visible  = inFilter && inPage;
-
-      card.classList.toggle('hidden', !visible);
-
-      if (visible) {
-        const pageIdx = pageSlice.indexOf(card);
-        card.style.animationDelay = `${pageIdx * 0.06}s`;
-        card.style.animation = 'none';
-        card.offsetHeight;
-        card.style.animation = 'fadeInUp 0.45s ease forwards';
-      }
-    });
-
-    // First card on every "all" page gets full-width featured treatment
-    if (isAll && pageSlice.length > 0) {
-      pageSlice[0].classList.add('page-featured');
-    }
-
-    // Pagination controls
-    if (pagination) {
-      pagination.style.display = (isAll && totalPages > 1) ? 'flex' : 'none';
-    }
-
-    if (pagesEl) {
-      pagesEl.innerHTML = '';
-      for (let p = 1; p <= totalPages; p++) {
-        const dot = document.createElement('button');
-        dot.className = 'pagination-dot' + (p === currentPage ? ' active' : '');
-        dot.setAttribute('aria-label', `Page ${p}`);
-        dot.textContent = p;
-        dot.addEventListener('click', () => {
-          currentPage = p;
-          renderPage();
-          document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const cardHtml = `
+            <div class="project-card ${featuredClass}" data-category="${item.category}" id="card-${item.id}">
+              <div class="project-thumb">
+                <div class="project-thumb-placeholder">${item.imagePlaceholder}</div>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">${item.tag}</span>
+                <div class="project-name">${item.name}</div>
+                <div class="project-desc">${item.description}</div>
+                ${linksHtml}
+              </div>
+            </div>
+          `;
+          portfolioGrid.insertAdjacentHTML('beforeend', cardHtml);
         });
-        pagesEl.appendChild(dot);
-      }
-    }
-
-    if (prevBtn) prevBtn.disabled = currentPage <= 1;
-    if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+        
+        // Re-attach observer for reveal on new cards if needed
+        // But cards have their own animation in renderPage()
+        
+        initPortfolioLogic();
+      })
+      .catch(err => console.error('Error loading portfolio:', err));
   }
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFilter = btn.dataset.filter;
-      currentPage   = 1;
-      renderPage();
+  function initPortfolioLogic() {
+    const tabBtns       = document.querySelectorAll('.tab-btn');
+    const projectCards  = document.querySelectorAll('.project-card');
+    const pagination    = document.getElementById('portfolioPagination');
+    const pagesEl       = document.getElementById('paginationPages');
+    const prevBtn       = document.getElementById('paginationPrev');
+    const nextBtn       = document.getElementById('paginationNext');
+
+    const ITEMS_PER_PAGE = 5;
+    let currentFilter    = 'all';
+    let currentPage      = 1;
+
+    function getFilteredCards() {
+      return [...projectCards].filter(card =>
+        currentFilter === 'all' || card.dataset.category === currentFilter
+      );
+    }
+
+    function renderPage() {
+      const filtered   = getFilteredCards();
+      const isAll      = currentFilter === 'all';
+      const totalPages = isAll ? Math.ceil(filtered.length / ITEMS_PER_PAGE) : 1;
+
+      currentPage = Math.min(Math.max(1, currentPage), totalPages);
+
+      const start = isAll ? (currentPage - 1) * ITEMS_PER_PAGE : 0;
+      const end   = isAll ? start + ITEMS_PER_PAGE : filtered.length;
+
+      const pageSlice = filtered.slice(start, end);
+
+      projectCards.forEach(card => card.classList.remove('page-featured'));
+
+      projectCards.forEach(card => {
+        const inFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
+        const idx      = filtered.indexOf(card);
+        const inPage   = idx >= start && idx < end;
+        const visible  = inFilter && inPage;
+
+        card.classList.toggle('hidden', !visible);
+
+        if (visible) {
+          const pageIdx = pageSlice.indexOf(card);
+          card.style.animationDelay = `${pageIdx * 0.06}s`;
+          card.style.animation = 'none';
+          card.offsetHeight;
+          card.style.animation = 'fadeInUp 0.45s ease forwards';
+        }
+      });
+
+      if (isAll && pageSlice.length > 0) {
+        pageSlice[0].classList.add('page-featured');
+      }
+
+      if (pagination) {
+        pagination.style.display = (isAll && totalPages > 1) ? 'flex' : 'none';
+      }
+
+      if (pagesEl) {
+        pagesEl.innerHTML = '';
+        for (let p = 1; p <= totalPages; p++) {
+          const dot = document.createElement('button');
+          dot.className = 'pagination-dot' + (p === currentPage ? ' active' : '');
+          dot.setAttribute('aria-label', `Page ${p}`);
+          dot.textContent = p;
+          dot.addEventListener('click', () => {
+            currentPage = p;
+            renderPage();
+            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+          pagesEl.appendChild(dot);
+        }
+      }
+
+      if (prevBtn) prevBtn.disabled = currentPage <= 1;
+      if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+    }
+
+    tabBtns.forEach(btn => {
+      // Clean up previous event listeners if initialized multiple times
+      const newBtn = btn.cloneNode(true);
+      btn.parentNode.replaceChild(newBtn, btn);
+      newBtn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        newBtn.classList.add('active');
+        currentFilter = newBtn.dataset.filter;
+        currentPage   = 1;
+        renderPage();
+      });
     });
-  });
 
-  if (prevBtn) prevBtn.addEventListener('click', () => {
-    currentPage--;
-    renderPage();
-    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-  if (nextBtn) nextBtn.addEventListener('click', () => {
-    currentPage++;
-    renderPage();
-    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
+    if (prevBtn) {
+      const newPrev = prevBtn.cloneNode(true);
+      prevBtn.parentNode.replaceChild(newPrev, prevBtn);
+      newPrev.addEventListener('click', () => {
+        currentPage--;
+        renderPage();
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+    
+    if (nextBtn) {
+      const newNext = nextBtn.cloneNode(true);
+      nextBtn.parentNode.replaceChild(newNext, nextBtn);
+      newNext.addEventListener('click', () => {
+        currentPage++;
+        renderPage();
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
 
-  renderPage();
+    renderPage();
+  }
 
 
 

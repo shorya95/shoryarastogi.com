@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shorya_R. — Admin Dashboard</title>
+  
+  <!-- Same font and icons as main site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Use main styles for consistency, plus admin specific styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: var(--bg-base);
+      padding: 40px 24px;
+      color: var(--text-primary);
+    }
+    .admin-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    /* Login Section */
+    #login-section {
+      max-width: 400px;
+      margin: 100px auto;
+      background: rgba(255,255,255,0.03);
+      padding: 40px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+    }
+    #login-section h2 { margin-bottom: 24px; }
+    #login-section p { color: var(--text-secondary); margin-bottom: 24px; font-size: 0.9rem; line-height: 1.5; }
+    
+    /* Dashboard Section */
+    #dashboard-section { display: none; }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .admin-project-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    .admin-project-card:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .apc-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .apc-title { font-weight: 600; font-size: 1.1rem; }
+    .apc-category { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+    .apc-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+    }
+    
+    /* Editor Section */
+    #editor-section { display: none; }
+    .editor-form {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+    }
+    .links-container {
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: var(--radius-lg);
+      margin-bottom: 24px;
+    }
+    .link-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+      align-items: flex-end;
+    }
+    .link-row .form-group { margin-bottom: 0; flex: 1; }
+    .link-row .form-group.checkbox { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    
+    /* Top Loader */
+    #loader {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 3px;
+      background: var(--violet);
+      animation: loadingBar 1s infinite;
+      z-index: 1000;
+    }
+    @keyframes loadingBar {
+      0% { width: 0%; margin-left: 0; }
+      50% { width: 100%; margin-left: 0; }
+      100% { width: 0%; margin-left: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div id="loader"></div>
+  
+  <div class="admin-container">
+    <div class="admin-header">
+      <a href="index.html" class="nav-logo">Shorya_R. <span style="font-family: var(--font-sans); font-size: 0.9rem; font-style: normal; color: var(--text-secondary); margin-left: 12px;">Admin</span></a>
+      <div id="user-controls" style="display: none;">
+        <button id="logoutBtn" class="contact-link" style="padding: 4px 12px; margin: 0; background: none; border: 1px solid var(--border);">Logout</button>
+      </div>
+    </div>
+
+    <!-- 1. LOGIN -->
+    <div id="login-section">
+      <h2>Admin Login</h2>
+      <p>Please enter your GitHub Personal Access Token. This dashboard communicates directly with the GitHub API to update your portfolio JSON file securely.</p>
+      <div class="form-group">
+        <label class="form-label" for="ghToken">GitHub Token (classic or fine-grained)</label>
+        <input type="password" id="ghToken" class="form-input" placeholder="ghp_..." />
+      </div>
+      <button id="loginBtn" class="btn btn-primary" style="width: 100%;">Connect to GitHub</button>
+      <p id="loginError" style="color: #ff6b6b; margin-top: 16px; display: none;"></p>
+    </div>
+
+    <!-- 2. DASHBOARD -->
+    <div id="dashboard-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <h2>Your Portfolio</h2>
+        <button id="addNewBtn" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Add New Project</button>
+      </div>
+      <div class="project-list" id="projectList">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+
+    <!-- 3. EDITOR -->
+    <div id="editor-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <h2 id="editorTitle">Add Project</h2>
+        <button id="cancelEditBtn" class="contact-link" style="padding: 4px 12px; margin: 0; background: none;">Cancel</button>
+      </div>
+      
+      <div class="editor-form">
+        <input type="hidden" id="editId" />
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Project Name</label>
+            <input type="text" id="editName" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select id="editCategory" class="form-select" required>
+              <option value="saas">SaaS & AI</option>
+              <option value="fashion">Fashion & Luxury</option>
+              <option value="beauty">Beauty & Lifestyle</option>
+              <option value="education">Education & B2B</option>
+              <option value="branding">Branding</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Image Placeholder Text (e.g. ALLSTEPS)</label>
+            <input type="text" id="editImage" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tags (e.g. SaaS · Shopify App)</label>
+            <input type="text" id="editTag" class="form-input" required />
+          </div>
+        </div>
+        
+        <div class="form-group" style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <input type="checkbox" id="editFeatured" style="width: 18px; height: 18px;" />
+          <label for="editFeatured" class="form-label" style="margin: 0; padding: 0; font-size: 1rem; color: var(--text-primary);">Featured Project (Spans 2 columns)</label>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea id="editDesc" class="form-input" rows="4" required></textarea>
+        </div>
+        
+        <label class="form-label">External Links</label>
+        <div class="links-container" id="linksContainer">
+          <!-- Dynamically added -->
+        </div>
+        <button id="addLinkBtn" class="btn btn-outline btn-sm" style="margin-bottom: 32px;"><i class="fa-solid fa-plus"></i> Add Link</button>
+        
+        <div style="border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: flex-end; gap: 16px;">
+          <button id="saveBtn" class="btn btn-primary">Save to GitHub</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
