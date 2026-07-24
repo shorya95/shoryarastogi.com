@@ -155,7 +155,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 20px max(48px, calc(50vw - 552px));
   transition: var(--transition);
 }
 
@@ -164,7 +164,7 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border);
-  padding: 14px 60px;
+  padding: 14px max(48px, calc(50vw - 552px));
 }
 
 .nav-logo {
@@ -908,7 +908,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 72px;
+  padding: 80px 72px 80px max(48px, calc(50vw - 552px));
   position: relative;
   overflow: hidden;
 }
