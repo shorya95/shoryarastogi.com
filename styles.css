@@ -1637,6 +1637,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-secondary);
   text-decoration: none;
   padding: 6px 12px;
+  margin-left: -12px; /* Offset padding to align icons with text */
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   transition: var(--transition);
