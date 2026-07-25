@@ -51,9 +51,9 @@
   --radius-full:   999px;
 
   /* Typography — Anthropic inspired: Newsreader/Instrument Serif + Plus Jakarta Sans */
-  --font-display:  'Newsreader', 'Instrument Serif', Georgia, serif;
+  --font-display:  'Instrument Serif', 'Newsreader', Georgia, serif;
   --font-body:     'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
-  --font-logo:     'Newsreader', 'Instrument Serif', Georgia, serif;
+  --font-logo:     'Instrument Serif', 'Newsreader', Georgia, serif;
 
   /* Motion */
   --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
