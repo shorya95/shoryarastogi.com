@@ -55,11 +55,10 @@
   },
   {
     "id": "krbnyc",
-    "category": "fashion",
-    "isFeatured": true,
-    "imagePlaceholder": "KRB NYC",
-    "tag": "Shopify · Fashion · New York",
     "name": "KRB NYC",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1784970627549_KRBNYC.png",
+    "imagePlaceholder": "KRB NYC",
     "description": "Custom Shopify theme design for a luxury New York fashion label. Focused on editorial storytelling and conversion-optimized product pages.",
     "links": [
       {
