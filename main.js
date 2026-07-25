@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(data => {
         portfolioGrid.innerHTML = ''; // Clear loading state if any
         data.forEach(item => {
-          const featuredClass = item.isFeatured ? 'featured-card' : '';
+          const featuredClass = '';
           
           let linksHtml = '';
           item.links.forEach(link => {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn       = document.getElementById('paginationPrev');
     const nextBtn       = document.getElementById('paginationNext');
 
-    const ITEMS_PER_PAGE = 5;
+    const ITEMS_PER_PAGE = 6;
     let currentFilter    = 'all';
     let currentPage      = 1;
 
@@ -121,8 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const pageSlice = filtered.slice(start, end);
 
-      projectCards.forEach(card => card.classList.remove('page-featured'));
-
       projectCards.forEach(card => {
         const inFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
         const idx      = filtered.indexOf(card);
@@ -139,10 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
           card.style.animation = 'fadeInUp 0.45s ease forwards';
         }
       });
-
-      if (isAll && pageSlice.length > 0) {
-        pageSlice[0].classList.add('page-featured');
-      }
 
       if (pagination) {
         pagination.style.display = (isAll && totalPages > 1) ? 'flex' : 'none';

@@ -1139,23 +1139,6 @@ img { max-width: 100%; display: block; }
   display: none;
 }
 
-/* Only the dynamically assigned first card of a page is double-wide */
-.page-featured {
-  grid-column: span 2;
-}
-
-.page-featured .project-thumb {
-  height: 260px;
-}
-
-.page-featured .project-info {
-  padding: 24px 28px 28px;
-}
-
-.page-featured .project-name {
-  font-size: 1.2rem;
-}
-
 /* ── Thumbnail ── */
 .project-thumb {
   position: relative;
@@ -1976,7 +1959,6 @@ footer {
   .about-grid { grid-template-columns: 1fr; }
   .about-photo-col { position: static; }
   .portfolio-grid { grid-template-columns: 1fr 1fr; }
-  .featured-card { grid-column: span 2; }
   .global-moment { grid-template-columns: 1fr 340px; }
   .global-moment-content { padding: 56px 40px; }
 }
@@ -1998,7 +1980,6 @@ footer {
 
   .exp-timeline-wrapper { margin-top: 24px; gap: 32px; }
   .timeline-role { font-size: 1.5rem; }
-  .featured-card { grid-column: span 1; }
   .portfolio-tabs { border-radius: var(--radius-lg); }
   .form-row { grid-template-columns: 1fr; }
 
