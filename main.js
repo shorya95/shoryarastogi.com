@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn       = document.getElementById('paginationPrev');
     const nextBtn       = document.getElementById('paginationNext');
 
-    const ITEMS_PER_PAGE = 6;
+    const ITEMS_PER_PAGE = 4;
     let currentFilter    = 'all';
     let currentPage      = 1;
 

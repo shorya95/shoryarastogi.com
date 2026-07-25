@@ -1101,8 +1101,8 @@ img { max-width: 100%; display: block; }
 /* ── Portfolio Grid ── */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 /* ── Project Card ── */
@@ -1143,7 +1143,7 @@ img { max-width: 100%; display: block; }
 .project-thumb {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -1300,7 +1300,7 @@ img { max-width: 100%; display: block; }
 /* Portfolio Grid */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
