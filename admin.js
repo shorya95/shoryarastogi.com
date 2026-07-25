@@ -262,7 +262,7 @@ function renderDashboard() {
         </div>
         <div class="apc-info">
           <div class="apc-title">${item.name}</div>
-          <div class="apc-category">${item.category} &bull; ${item.tag}</div>
+          <div class="apc-category">${item.category}</div>
         </div>
       </div>
       <div class="apc-actions">
@@ -311,7 +311,6 @@ function openEditor(item) {
     document.getElementById('editCategory').value = item.category;
     document.getElementById('editImageUrl').value = item.imageUrl || '';
     document.getElementById('editImage').value = item.imagePlaceholder || '';
-    document.getElementById('editTag').value = item.tag;
     document.getElementById('editDesc').value = item.description;
     
     item.links.forEach(l => addLinkRow(l.url, l.text, l.isSecondary));
@@ -322,7 +321,6 @@ function openEditor(item) {
     document.getElementById('editCategory').value = 'saas';
     document.getElementById('editImageUrl').value = '';
     document.getElementById('editImage').value = '';
-    document.getElementById('editTag').value = '';
     document.getElementById('editDesc').value = '';
   }
   
@@ -370,7 +368,6 @@ function getEditorData() {
     category: document.getElementById('editCategory').value,
     imageUrl: document.getElementById('editImageUrl').value.trim(),
     imagePlaceholder: document.getElementById('editImage').value.trim(),
-    tag: document.getElementById('editTag').value.trim(),
     description: document.getElementById('editDesc').value.trim(),
     links: links
   };

@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${thumbHtml}
               </div>
               <div class="project-info">
-                <span class="project-tag">${item.tag}</span>
                 <div class="project-name">${item.name}</div>
                 <div class="project-desc">${item.description}</div>
                 ${linksHtml}
