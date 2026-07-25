@@ -22,19 +22,12 @@
     "category": "saas",
     "imageUrl": "assets/portfolio/1784967549969_Emendo.ai.png",
     "imagePlaceholder": "EMENDO",
-    "tag": "SaaS · AI · UX Design",
-    "isFeatured": false,
     "description": "Full UX design for an AI bookkeeping assistant. Translated complex LLM outputs into intuitive financial dashboards for non-technical users.",
     "links": [
       {
         "url": "https://www.emendo.ai/",
         "text": "Visit Site ↗",
         "isSecondary": false
-      },
-      {
-        "url": "https://www.figma.com/design/fSLd74eryAJL3FxvDT2Mly/Emendo-(Latest-Oct-31)?node-id=10460-560",
-        "text": "Figma ↗",
-        "isSecondary": true
       }
     ]
   },
