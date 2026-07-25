@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* ---------- GOOGLE FONTS ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* ---------- CSS VARIABLES ---------- */
 :root {
@@ -50,10 +50,10 @@
   --radius-xl:     32px;
   --radius-full:   999px;
 
-  /* Typography — Anthropic inspired: elegant serif headings + clean grotesque body */
-  --font-display:  'Newsreader', Georgia, serif;
-  --font-body:     'Inter', -apple-system, sans-serif;
-  --font-logo:     'Playfair Display', serif;
+  /* Typography — Anthropic inspired: Newsreader/Instrument Serif + Plus Jakarta Sans */
+  --font-display:  'Newsreader', 'Instrument Serif', Georgia, serif;
+  --font-body:     'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-logo:     'Newsreader', 'Instrument Serif', Georgia, serif;
 
   /* Motion */
   --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
