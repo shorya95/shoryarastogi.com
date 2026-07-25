@@ -18,11 +18,12 @@
   },
   {
     "id": "emendo",
+    "name": "Emendo — AI Bookkeeping",
     "category": "saas",
-    "isFeatured": false,
+    "imageUrl": "assets/portfolio/1784967549969_Emendo.ai.png",
     "imagePlaceholder": "EMENDO",
     "tag": "SaaS · AI · UX Design",
-    "name": "Emendo — AI Bookkeeping",
+    "isFeatured": false,
     "description": "Full UX design for an AI bookkeeping assistant. Translated complex LLM outputs into intuitive financial dashboards for non-technical users.",
     "links": [
       {
