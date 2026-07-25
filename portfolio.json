@@ -39,22 +39,6 @@
     ]
   },
   {
-    "id": "flickplex",
-    "category": "saas",
-    "isFeatured": false,
-    "imagePlaceholder": "FLICKPLEX",
-    "tag": "Product Design · Entertainment",
-    "name": "FlickPlex",
-    "description": "End-to-end product design for a streaming and movie discovery platform. Focused on browsing UX, content discovery, and engagement flows.",
-    "links": [
-      {
-        "url": "https://www.figma.com/proto/C1gTFY9ZO7G0F766wYFFkd/FlickPlex?page-id=78%3A498&type=design&node-id=115-1495&viewport=582%2C712%2C0.19&t=bRMTdf9D2UaSxymx-1&scaling=scale-down&starting-point-node-id=115%3A1495&mode=design",
-        "text": "View Prototype ↗",
-        "isSecondary": false
-      }
-    ]
-  },
-  {
     "id": "farmsnation",
     "category": "saas",
     "isFeatured": false,
