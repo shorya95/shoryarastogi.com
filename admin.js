@@ -247,10 +247,23 @@ function renderDashboard() {
   currentPortfolio.forEach(item => {
     const el = document.createElement('div');
     el.className = 'admin-project-card';
+    
+    let thumbInner = '';
+    if (item.imageUrl) {
+      thumbInner = `<img src="${item.imageUrl}" alt="${item.name}" />`;
+    } else {
+      thumbInner = `<span>${item.imagePlaceholder || 'NO IMG'}</span>`;
+    }
+
     el.innerHTML = `
-      <div class="apc-info">
-        <div class="apc-title">${item.name} ${item.isFeatured ? '<i class="fa-solid fa-star" style="color:var(--violet); font-size:12px;"></i>' : ''}</div>
-        <div class="apc-category">${item.category} &bull; ${item.tag}</div>
+      <div class="apc-left">
+        <div class="apc-thumb">
+          ${thumbInner}
+        </div>
+        <div class="apc-info">
+          <div class="apc-title">${item.name}</div>
+          <div class="apc-category">${item.category} &bull; ${item.tag}</div>
+        </div>
       </div>
       <div class="apc-actions">
         <button class="btn btn-outline btn-sm edit-btn" data-id="${item.id}">Edit</button>
@@ -299,7 +312,6 @@ function openEditor(item) {
     document.getElementById('editImageUrl').value = item.imageUrl || '';
     document.getElementById('editImage').value = item.imagePlaceholder || '';
     document.getElementById('editTag').value = item.tag;
-    document.getElementById('editFeatured').checked = item.isFeatured;
     document.getElementById('editDesc').value = item.description;
     
     item.links.forEach(l => addLinkRow(l.url, l.text, l.isSecondary));
@@ -311,7 +323,6 @@ function openEditor(item) {
     document.getElementById('editImageUrl').value = '';
     document.getElementById('editImage').value = '';
     document.getElementById('editTag').value = '';
-    document.getElementById('editFeatured').checked = false;
     document.getElementById('editDesc').value = '';
   }
   
@@ -360,7 +371,6 @@ function getEditorData() {
     imageUrl: document.getElementById('editImageUrl').value.trim(),
     imagePlaceholder: document.getElementById('editImage').value.trim(),
     tag: document.getElementById('editTag').value.trim(),
-    isFeatured: document.getElementById('editFeatured').checked,
     description: document.getElementById('editDesc').value.trim(),
     links: links
   };

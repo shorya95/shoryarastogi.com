@@ -65,10 +65,31 @@
       background: rgba(255,255,255,0.05);
       border-color: rgba(255,255,255,0.2);
     }
-    .apc-info {
+    .apc-left {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+      align-items: center;
+      gap: 16px;
+    }
+    .apc-thumb {
+      width: 72px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+    .apc-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .apc-title { font-weight: 600; font-size: 1.1rem; }
     .apc-category { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
@@ -203,10 +224,7 @@
           <input type="text" id="editTag" class="form-input" required />
         </div>
         
-        <div class="form-group" style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
-          <input type="checkbox" id="editFeatured" style="width: 18px; height: 18px;" />
-          <label for="editFeatured" class="form-label" style="margin: 0; padding: 0; font-size: 1rem; color: var(--text-primary);">Featured Project</label>
-        </div>
+
         
         <div class="form-group">
           <label class="form-label">Description</label>
