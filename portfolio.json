@@ -6,7 +6,7 @@
     "imageUrl": "assets/portfolio/1784966066661_Allsteps.png",
     "imagePlaceholder": "ALLSTEPS",
     "tag": "SaaS · Shopify App · Co-Founded",
-    "isFeatured": true,
+    "isFeatured": false,
     "description": "Designed, built and shipped a live Shopify app solo using AI-accelerated dev. Automated CRO & SEO audit engine for merchants — from concept to live app in weeks.",
     "links": [
       {
