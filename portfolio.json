@@ -40,11 +40,10 @@
   },
   {
     "id": "farmsnation",
-    "category": "saas",
-    "isFeatured": false,
-    "imagePlaceholder": "FARMSNATION",
-    "tag": "Marketplace · Co-Founded · UX",
     "name": "Farmsnation",
+    "category": "saas",
+    "imageUrl": "assets/portfolio/1784970196683_farmsnation.png",
+    "imagePlaceholder": "FARMSNATION",
     "description": "Co-founded a farm-to-consumer marketplace. Led UX strategy, product roadmap, and logistics flows from zero to launch.",
     "links": [
       {
