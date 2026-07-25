@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── PORTFOLIO FETCHING + RENDERING ────────────────────────
   const portfolioGrid = document.querySelector('.portfolio-grid');
   if (portfolioGrid) {
-    fetch('portfolio.json')
+    fetch('portfolio.json?t=' + Date.now(), { cache: 'no-store' })
       .then(res => res.json())
       .then(data => {
         portfolioGrid.innerHTML = ''; // Clear loading state if any
