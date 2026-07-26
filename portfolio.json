@@ -428,26 +428,6 @@
     ]
   },
   {
-    "id": "flickplex",
-    "name": "FlickPlex",
-    "category": "saas",
-    "imagePlaceholder": "FLICKPLEX",
-    "description": "End-to-end UI/UX design and interactive prototype for an entertainment streaming and media discovery platform.",
-    "skills": [
-      "Figma",
-      "UI/UX Design",
-      "Generative AI"
-    ],
-    "detailedContent": "<h3>Product Design & Prototyping</h3><p>Designed a dark-mode media discovery interface with interactive Figma prototypes covering movie browsing, watchlist curation, and personalized AI recommendations.</p>",
-    "links": [
-      {
-        "url": "https://www.figma.com/proto/C1gTFY9ZO7G0F766wYFFkd/FlickPlex?page-id=78%3A498&type=design&node-id=115-1495&viewport=582%2C712%2C0.19&t=bRMTdf9D2UaSxymx-1&scaling=scale-down&starting-point-node-id=115%3A1495&mode=design",
-        "text": "Figma ↗",
-        "isSecondary": false
-      }
-    ]
-  },
-  {
     "id": "readynez",
     "name": "Readynez",
     "category": "education",
