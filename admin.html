@@ -130,6 +130,40 @@
       font-size: 0.85rem;
     }
     
+    /* Admin Filter Tabs */
+    .admin-filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .admin-tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .admin-tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .admin-tab-btn.active {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    
     /* Editor Section */
     #editor-section { display: none; }
     .editor-form {
@@ -198,6 +232,17 @@
         <h2>Your Portfolio</h2>
         <button id="addNewBtn" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Add New Project</button>
       </div>
+
+      <!-- Admin Filter Tabs -->
+      <div class="admin-filter-tabs" id="adminFilterTabs">
+        <button class="admin-tab-btn active" data-filter="all">All</button>
+        <button class="admin-tab-btn" data-filter="saas">SaaS &amp; AI</button>
+        <button class="admin-tab-btn" data-filter="fashion">Interior &amp; Luxury</button>
+        <button class="admin-tab-btn" data-filter="beauty">Fashion &amp; Lifestyle</button>
+        <button class="admin-tab-btn" data-filter="education">Education &amp; B2B</button>
+        <button class="admin-tab-btn" data-filter="branding">Branding</button>
+      </div>
+
       <div class="project-list" id="projectList">
         <!-- Injected via JS -->
       </div>

@@ -23,6 +23,26 @@ const saveBtn = document.getElementById('saveBtn');
 const addLinkBtn = document.getElementById('addLinkBtn');
 const linksContainer = document.getElementById('linksContainer');
 
+let activeAdminFilter = 'all';
+
+function initAdminFilterTabs() {
+  const container = document.getElementById('adminFilterTabs');
+  if (!container) return;
+
+  container.addEventListener('click', (e) => {
+    const btn = e.target.closest('.admin-tab-btn');
+    if (!btn) return;
+
+    container.querySelectorAll('.admin-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    activeAdminFilter = btn.dataset.filter;
+    renderDashboard();
+  });
+}
+
+initAdminFilterTabs();
+
 // Init
 if (githubToken) {
   showLoader();
@@ -242,9 +262,50 @@ saveBtn.addEventListener('click', async () => {
 });
 
 // ── RENDER DASHBOARD ─────────────────────────────────────
+function updateAdminFilterCounts() {
+  const container = document.getElementById('adminFilterTabs');
+  if (!container) return;
+
+  const counts = {
+    all: currentPortfolio.length,
+    saas: currentPortfolio.filter(p => p.category === 'saas').length,
+    fashion: currentPortfolio.filter(p => p.category === 'fashion').length,
+    beauty: currentPortfolio.filter(p => p.category === 'beauty').length,
+    education: currentPortfolio.filter(p => p.category === 'education').length,
+    branding: currentPortfolio.filter(p => p.category === 'branding').length
+  };
+
+  const catLabels = {
+    all: 'All',
+    saas: 'SaaS & AI',
+    fashion: 'Interior & Luxury',
+    beauty: 'Fashion & Lifestyle',
+    education: 'Education & B2B',
+    branding: 'Branding'
+  };
+
+  container.querySelectorAll('.admin-tab-btn').forEach(btn => {
+    const filterKey = btn.dataset.filter;
+    const label = catLabels[filterKey] || filterKey;
+    const count = counts[filterKey] || 0;
+    btn.textContent = `${label} (${count})`;
+  });
+}
+
 function renderDashboard() {
+  updateAdminFilterCounts();
   projectList.innerHTML = '';
-  currentPortfolio.forEach(item => {
+
+  const itemsToRender = activeAdminFilter === 'all'
+    ? currentPortfolio
+    : currentPortfolio.filter(item => item.category === activeAdminFilter);
+
+  if (itemsToRender.length === 0) {
+    projectList.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-muted);">No projects found in this category.</div>';
+    return;
+  }
+
+  itemsToRender.forEach(item => {
     const el = document.createElement('div');
     el.className = 'admin-project-card';
     
