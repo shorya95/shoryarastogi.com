@@ -3,13 +3,9 @@
     "id": "allsteps",
     "name": "Allsteps.ai",
     "category": "saas",
-    "imageUrl": "assets/portfolio/1784966066661_Allsteps.png",
+    "imageUrl": "assets/portfolio/1785050305476_Allsteps.png",
     "imagePlaceholder": "ALLSTEPS",
-    "tag": "SaaS · Shopify App · Co-Founded",
-    "isFeatured": false,
     "description": "Designed, built and shipped a live Shopify app solo using AI-accelerated dev. Automated CRO & SEO audit engine for merchants — from concept to live app in weeks.",
-    "skills": ["UI/UX Design", "Design Systems", "Shopify Apps", "React / Next.js", "Cursor AI", "Programmatic SEO", "CRO Strategy"],
-    "detailedContent": "<h3>Overview & Objective</h3><p>Allsteps.ai is an automated CRO and SEO audit engine built for Shopify merchants. The objective was to eliminate complex manual store audits by leveraging AI to generate step-by-step actionable recommendations.</p><h3>Key Accomplishments</h3><ul><li>Designed complete design system and user experience in Figma.</li><li>Built and published the live Shopify App using React/Next.js and Cursor AI.</li><li>Engineered automated audit scoring and one-click recommendation workflows.</li></ul>",
     "links": [
       {
         "url": "https://apps.shopify.com/allsteps",
@@ -25,7 +21,13 @@
     "imageUrl": "assets/portfolio/1784967549969_Emendo.ai.png",
     "imagePlaceholder": "EMENDO",
     "description": "Full UX design for an AI bookkeeping assistant. Translated complex LLM outputs into intuitive financial dashboards for non-technical users.",
-    "skills": ["Figma", "UI/UX Design", "Design Systems", "UX Research", "Generative AI"],
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "Design Systems",
+      "UX Research",
+      "Generative AI"
+    ],
     "detailedContent": "<h3>Product Design & Challenge</h3><p>Bookkeeping platforms often overwhelm users with dense financial data. For Emendo, the goal was to transform multi-step accounting workflows into conversational AI prompts and clear visual dashboards.</p><h3>Design Solutions</h3><ul><li>Created an end-to-end Figma prototype covering receipt processing, ledger updates, and AI query flows.</li><li>Built an adaptive light/dark UI design system tailored for high data readability.</li></ul>",
     "links": [
       {
