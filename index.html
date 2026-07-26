@@ -429,6 +429,29 @@
   </footer>
 
 
+  <!-- ════════════════════════════════════════════════
+       CASE STUDY MODAL POPUP
+  ════════════════════════════════════════════════ -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modalHeroContainer"></div>
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <span class="modal-category-badge" id="modalCategory">Category</span>
+        </div>
+        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+        <div class="modal-summary" id="modalSummary"></div>
+        <div class="modal-skills-section" id="modalSkillsSection" style="display:none;">
+          <div class="modal-skills-title">Technologies &amp; Skills</div>
+          <div class="modal-skills-list" id="modalSkillsList"></div>
+        </div>
+        <div class="modal-detailed-content" id="modalDetailedContent" style="display:none;"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>

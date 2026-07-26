@@ -244,6 +244,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 
+
 /* Hero split layout */
 .hero-inner {
   display: grid;
@@ -1990,4 +1991,251 @@ footer {
 
   .footer-inner { flex-direction: column; text-align: center; }
   .portfolio-filters { flex-wrap: wrap; border-radius: var(--radius-lg); }
+}
+
+/* ── CASE STUDY MODAL ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-violet);
+  border-radius: var(--radius-xl);
+  max-width: 840px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.15);
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.35s var(--ease-out);
+}
+
+.modal-overlay.open .modal-box {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: rotate(90deg);
+}
+
+.modal-hero-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-hero-placeholder {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.3);
+}
+
+.modal-body {
+  padding: 36px 40px 48px;
+}
+
+.modal-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.modal-category-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--violet-light);
+  background: var(--violet-dim);
+  border: 1px solid var(--border);
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.modal-summary {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.modal-skills-section {
+  margin-bottom: 32px;
+}
+
+.modal-skills-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.modal-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-skill-badge {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.modal-detailed-content {
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+  margin-top: 28px;
+  font-size: 0.975rem;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+.modal-detailed-content h3, .modal-detailed-content h4 {
+  font-family: var(--font-display);
+  color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.modal-detailed-content ul, .modal-detailed-content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.modal-detailed-content li {
+  margin-bottom: 6px;
+}
+
+.modal-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── ADMIN SKILLS SELECTOR ── */
+.skills-admin-section {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.skills-category-block {
+  margin-bottom: 20px;
+}
+
+.skills-category-block:last-child {
+  margin-bottom: 0;
+}
+
+.skills-cat-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.skills-pills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-toggle-pill {
+  cursor: pointer;
+  user-select: none;
+}
+
+.skill-toggle-pill input {
+  display: none;
+}
+
+.skill-toggle-pill span {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+}
+
+.skill-toggle-pill input:checked + span {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  border-color: #ffffff;
+  box-shadow: 0 0 14px rgba(255,255,255,0.3);
 }

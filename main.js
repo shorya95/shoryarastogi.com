@@ -82,10 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
           portfolioGrid.insertAdjacentHTML('beforeend', cardHtml);
         });
         
-        // Re-attach observer for reveal on new cards if needed
-        // But cards have their own animation in renderPage()
-        
+        window.portfolioData = data;
         initPortfolioLogic();
+        initModalLogic();
       })
       .catch(err => console.error('Error loading portfolio:', err));
   }
@@ -316,6 +315,110 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dialNext) {
       dialNext.addEventListener('click', () => goToSlide(currentExpIndex + 1));
     }
+  }
+
+  // ── CASE STUDY MODAL LOGIC ────────────────────────────
+  function initModalLogic() {
+    const modal = document.getElementById('projectModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    if (!modal) return;
+
+    const modalHeroContainer = document.getElementById('modalHeroContainer');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalSummary = document.getElementById('modalSummary');
+    const modalSkillsSection = document.getElementById('modalSkillsSection');
+    const modalSkillsList = document.getElementById('modalSkillsList');
+    const modalDetailedContent = document.getElementById('modalDetailedContent');
+    const modalLinks = document.getElementById('modalLinks');
+
+    // Attach click listeners to cards
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.project-link')) return;
+
+        const cardId = card.id.replace('card-', '');
+        const item = (window.portfolioData || []).find(p => p.id === cardId);
+        if (item) {
+          openModal(item);
+        }
+      });
+    });
+
+    function openModal(item) {
+      if (item.imageUrl) {
+        modalHeroContainer.innerHTML = `<img src="${item.imageUrl}" alt="${item.name}" class="modal-hero-img" />`;
+      } else {
+        modalHeroContainer.innerHTML = `<div class="modal-hero-placeholder">${item.imagePlaceholder || item.name}</div>`;
+      }
+
+      const categoryNames = {
+        saas: 'SaaS & AI',
+        fashion: 'Fashion & Luxury',
+        beauty: 'Beauty & Lifestyle',
+        education: 'Education & B2B',
+        branding: 'Branding'
+      };
+      modalCategory.textContent = categoryNames[item.category] || item.category;
+      modalTitle.textContent = item.name;
+      modalSummary.textContent = item.description || '';
+
+      if (item.skills && item.skills.length > 0) {
+        modalSkillsList.innerHTML = item.skills.map(s => `<span class="modal-skill-badge">${s}</span>`).join('');
+        modalSkillsSection.style.display = 'block';
+      } else {
+        modalSkillsList.innerHTML = '';
+        modalSkillsSection.style.display = 'none';
+      }
+
+      if (item.detailedContent && item.detailedContent.trim().length > 0) {
+        modalDetailedContent.innerHTML = item.detailedContent;
+        modalDetailedContent.style.display = 'block';
+      } else {
+        modalDetailedContent.innerHTML = '';
+        modalDetailedContent.style.display = 'none';
+      }
+
+      if (item.links && item.links.length > 0) {
+        let linksHtml = '';
+        item.links.forEach(link => {
+          const secClass = link.isSecondary ? ' secondary' : '';
+          linksHtml += `<a href="${link.url}" target="_blank" rel="noopener" class="project-link${secClass}">${link.text}</a>`;
+        });
+        modalLinks.innerHTML = linksHtml;
+        modalLinks.style.display = 'flex';
+      } else {
+        modalLinks.innerHTML = '';
+        modalLinks.style.display = 'none';
+      }
+
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener('click', closeModal);
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) {
+        closeModal();
+      }
+    });
   }
 
 });

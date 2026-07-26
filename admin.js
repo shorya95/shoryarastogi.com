@@ -312,6 +312,12 @@ function openEditor(item) {
     document.getElementById('editImageUrl').value = item.imageUrl || '';
     document.getElementById('editImage').value = item.imagePlaceholder || '';
     document.getElementById('editDesc').value = item.description;
+    document.getElementById('editDetailedContent').value = item.detailedContent || '';
+    
+    const selectedSkills = item.skills || [];
+    document.querySelectorAll('.skill-pill-input').forEach(chk => {
+      chk.checked = selectedSkills.includes(chk.value);
+    });
     
     item.links.forEach(l => addLinkRow(l.url, l.text, l.isSecondary));
   } else {
@@ -322,6 +328,8 @@ function openEditor(item) {
     document.getElementById('editImageUrl').value = '';
     document.getElementById('editImage').value = '';
     document.getElementById('editDesc').value = '';
+    document.getElementById('editDetailedContent').value = '';
+    document.querySelectorAll('.skill-pill-input').forEach(chk => chk.checked = false);
   }
   
   showEditor();
@@ -362,6 +370,11 @@ function getEditorData() {
     }
   });
   
+  const selectedSkills = [];
+  document.querySelectorAll('.skill-pill-input:checked').forEach(chk => {
+    selectedSkills.push(chk.value);
+  });
+  
   return {
     id: document.getElementById('editId').value,
     name: document.getElementById('editName').value.trim(),
@@ -369,6 +382,8 @@ function getEditorData() {
     imageUrl: document.getElementById('editImageUrl').value.trim(),
     imagePlaceholder: document.getElementById('editImage').value.trim(),
     description: document.getElementById('editDesc').value.trim(),
+    detailedContent: document.getElementById('editDetailedContent').value.trim(),
+    skills: selectedSkills,
     links: links
   };
 }
