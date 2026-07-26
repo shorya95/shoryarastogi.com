@@ -325,24 +325,16 @@ function renderDashboard() {
     };
     const catDisplay = catMap[item.category] || item.category;
 
-    let skillsHtml = '';
-    if (item.skills && item.skills.length > 0) {
-      skillsHtml = item.skills.join(', ');
-    } else {
-      skillsHtml = '<span style="color: var(--text-muted); font-style: italic;">No skills selected</span>';
-    }
-
     el.innerHTML = `
       <div class="apc-left" style="flex: 1; min-width: 0;">
         <div class="apc-thumb">
           ${thumbInner}
         </div>
         <div class="apc-info" style="flex: 1; min-width: 0;">
-          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
             <div class="apc-title">${item.name}</div>
             <span class="apc-cat-badge">${catDisplay}</span>
           </div>
-          <div class="apc-skills-text">${skillsHtml}</div>
         </div>
       </div>
       <div class="apc-actions" style="flex-shrink: 0; margin-left: 20px;">
