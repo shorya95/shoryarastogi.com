@@ -269,19 +269,25 @@ function updateAdminFilterCounts() {
   const counts = {
     all: currentPortfolio.length,
     saas: currentPortfolio.filter(p => p.category === 'saas').length,
+    interior: currentPortfolio.filter(p => p.category === 'interior').length,
     fashion: currentPortfolio.filter(p => p.category === 'fashion').length,
     beauty: currentPortfolio.filter(p => p.category === 'beauty').length,
     education: currentPortfolio.filter(p => p.category === 'education').length,
+    b2b: currentPortfolio.filter(p => p.category === 'b2b').length,
+    impact: currentPortfolio.filter(p => p.category === 'impact').length,
     branding: currentPortfolio.filter(p => p.category === 'branding').length
   };
 
   const catLabels = {
     all: 'All',
     saas: 'SaaS & AI',
-    fashion: 'Interior & Luxury',
-    beauty: 'Fashion & Lifestyle',
-    education: 'Education & B2B',
-    branding: 'Branding'
+    interior: 'Interior & Decor',
+    fashion: 'Fashion & Luxury',
+    beauty: 'Wellness & Beauty',
+    education: 'Education & EdTech',
+    b2b: 'B2B & Enterprise',
+    impact: 'Health & Impact',
+    branding: 'Branding & Media'
   };
 
   container.querySelectorAll('.admin-tab-btn').forEach(btn => {
@@ -318,10 +324,13 @@ function renderDashboard() {
 
     const catMap = {
       saas: 'SaaS & AI',
-      fashion: 'Interior & Luxury',
-      beauty: 'Fashion & Lifestyle',
-      education: 'Education & B2B',
-      branding: 'Branding'
+      interior: 'Interior & Decor',
+      fashion: 'Fashion & Luxury',
+      beauty: 'Wellness & Beauty',
+      education: 'Education & EdTech',
+      b2b: 'B2B & Enterprise',
+      impact: 'Health & Impact',
+      branding: 'Branding & Media'
     };
     const catDisplay = catMap[item.category] || item.category;
 

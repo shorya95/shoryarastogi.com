@@ -354,10 +354,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const categoryNames = {
         saas: 'SaaS & AI',
-        fashion: 'Interior & Luxury',
-        beauty: 'Fashion & Lifestyle',
-        education: 'Education & B2B',
-        branding: 'Branding'
+        interior: 'Interior & Decor',
+        fashion: 'Fashion & Luxury',
+        beauty: 'Wellness & Beauty',
+        education: 'Education & EdTech',
+        b2b: 'B2B & Enterprise',
+        impact: 'Health & Impact',
+        branding: 'Branding & Media'
       };
       modalCategory.textContent = categoryNames[item.category] || item.category;
       modalTitle.textContent = item.name;

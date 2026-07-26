@@ -68,7 +68,7 @@
   {
     "id": "krbnyc",
     "name": "KRB NYC",
-    "category": "fashion",
+    "category": "interior",
     "imageUrl": "assets/portfolio/1785048097926_KRBNYC.png",
     "imagePlaceholder": "KRB NYC",
     "description": "Custom Shopify theme design for a luxury New York fashion label. Focused on editorial storytelling and conversion-optimized product pages.",
@@ -120,7 +120,7 @@
   {
     "id": "tracyglover",
     "name": "Tracy Glover Studio",
-    "category": "fashion",
+    "category": "interior",
     "imageUrl": "assets/portfolio/1785049869997_TracyGloverStudio.png",
     "imagePlaceholder": "TRACY GLOVER",
     "description": "Custom Shopify experience for an artisan lighting studio. Designed to showcase handcrafted product photography with an elegant, gallery-quality feel.",
@@ -145,7 +145,7 @@
   {
     "id": "schoellkopf",
     "name": "Schoellkopf 1844",
-    "category": "fashion",
+    "category": "interior",
     "imageUrl": "assets/portfolio/1785049880456_Schoellkopf1844.png",
     "imagePlaceholder": "SCHOELLKOPF",
     "description": "E-commerce design for one of America's oldest heritage brands. Balanced historical gravitas with modern shopping UX.",
@@ -170,7 +170,7 @@
   },
   {
     "id": "jiacollection",
-    "category": "beauty",
+    "category": "fashion",
     "isFeatured": false,
     "imagePlaceholder": "JIA",
     "tag": "Shopify · Jewellery · Lifestyle",
@@ -213,7 +213,7 @@
   {
     "id": "paloma",
     "name": "Paloma & Co",
-    "category": "fashion",
+    "category": "interior",
     "imageUrl": "assets/portfolio/1785050924749_Paloma.png",
     "imagePlaceholder": "PALOMA & CO",
     "description": "Warm, editorial Shopify experience for a lifestyle beauty brand. Designed to evoke personal connection and drive repeat purchases.",
@@ -301,7 +301,7 @@
   },
   {
     "id": "lyralab",
-    "category": "education",
+    "category": "b2b",
     "isFeatured": false,
     "imagePlaceholder": "LYRA LABS",
     "tag": "WordPress · Tech Startup · B2B",
@@ -322,7 +322,7 @@
   },
   {
     "id": "jumptech",
-    "category": "education",
+    "category": "b2b",
     "isFeatured": false,
     "imagePlaceholder": "JUMP TECH",
     "tag": "Webflow · Tech Solutions · B2B",
@@ -343,7 +343,7 @@
   },
   {
     "id": "premierattire",
-    "category": "branding",
+    "category": "fashion",
     "isFeatured": false,
     "imagePlaceholder": "PREMIER ATTIRE",
     "tag": "Branding · Identity · Fashion",
@@ -472,7 +472,7 @@
   {
     "id": "enestit",
     "name": "eNest IT",
-    "category": "education",
+    "category": "b2b",
     "imagePlaceholder": "ENEST IT",
     "description": "Custom WordPress corporate website for an IT services and software development agency.",
     "skills": [
@@ -492,7 +492,7 @@
   {
     "id": "parkstone",
     "name": "Parkstone",
-    "category": "education",
+    "category": "b2b",
     "imagePlaceholder": "PARKSTONE",
     "description": "Modern Webflow corporate site for European real estate investment and development firm Parkstone.",
     "skills": [
@@ -512,7 +512,7 @@
   {
     "id": "puhos",
     "name": "Puhos Loves People",
-    "category": "education",
+    "category": "impact",
     "imagePlaceholder": "PUHOS",
     "description": "WordPress community and social impact initiative website built for Finland-based non-profit Puhos.",
     "skills": [
@@ -532,7 +532,7 @@
   {
     "id": "preventit",
     "name": "PreventIt",
-    "category": "education",
+    "category": "impact",
     "imagePlaceholder": "PREVENTIT",
     "description": "WordPress digital platform for a health prevention and awareness initiative.",
     "skills": [
