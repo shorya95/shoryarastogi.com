@@ -100,10 +100,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentFilter    = 'all';
     let currentPage      = 1;
 
+    const masterCatMap = {
+      saas: ['saas'],
+      lifestyle: ['interior', 'fashion', 'beauty'],
+      enterprise: ['education', 'b2b'],
+      branding_impact: ['branding', 'impact']
+    };
+
+    function cardMatchesFilter(card) {
+      if (currentFilter === 'all') return true;
+      const cat = card.dataset.category;
+      if (masterCatMap[currentFilter]) {
+        return masterCatMap[currentFilter].includes(cat);
+      }
+      return cat === currentFilter;
+    }
+
     function getFilteredCards() {
-      return [...projectCards].filter(card =>
-        currentFilter === 'all' || card.dataset.category === currentFilter
-      );
+      return [...projectCards].filter(cardMatchesFilter);
     }
 
     function renderPage() {
@@ -119,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const pageSlice = filtered.slice(start, end);
 
       projectCards.forEach(card => {
-        const inFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
+        const inFilter = cardMatchesFilter(card);
         const idx      = filtered.indexOf(card);
         const inPage   = idx >= start && idx < end;
         const visible  = inFilter && inPage;
