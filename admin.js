@@ -327,9 +327,9 @@ function renderDashboard() {
 
     let skillsHtml = '';
     if (item.skills && item.skills.length > 0) {
-      skillsHtml = item.skills.map(s => `<span class="apc-skill-pill">${s}</span>`).join('');
+      skillsHtml = item.skills.join(', ');
     } else {
-      skillsHtml = '<span style="font-size: 0.75rem; color: var(--text-muted);">No skills added</span>';
+      skillsHtml = '<span style="color: var(--text-muted); font-style: italic;">No skills selected</span>';
     }
 
     el.innerHTML = `
@@ -342,10 +342,10 @@ function renderDashboard() {
             <div class="apc-title">${item.name}</div>
             <span class="apc-cat-badge">${catDisplay}</span>
           </div>
-          <div class="apc-skills-list">${skillsHtml}</div>
+          <div class="apc-skills-text">${skillsHtml}</div>
         </div>
       </div>
-      <div class="apc-actions" style="flex-shrink: 0; margin-left: 16px;">
+      <div class="apc-actions" style="flex-shrink: 0; margin-left: 20px;">
         <button class="btn btn-outline btn-sm edit-btn" data-id="${item.id}">Edit</button>
         <button class="btn btn-outline btn-sm del-btn" data-id="${item.id}" style="color:#ff6b6b; border-color:rgba(255,107,107,0.3);">Delete</button>
       </div>
