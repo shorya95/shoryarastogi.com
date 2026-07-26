@@ -1077,57 +1077,104 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-/* ── Portfolio Filter Tabs (Floating Chips) ── */
-.portfolio-filters,
-.portfolio-tabs {
-  display: flex !important;
-  gap: 10px !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-top: 24px;
-  margin-bottom: 44px;
-  padding: 0 !important;
-  background: transparent !important;
-  border: none !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: visible !important;
+/* ── Portfolio 2-Column Sidebar Layout ── */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
 }
 
-.tab-btn,
-.filter-btn {
+.portfolio-sidebar {
+  position: relative;
+}
+
+.portfolio-sidebar-sticky {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Vertical Category Filter List */
+.portfolio-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
   font-family: var(--font-sans);
-  font-size: 0.84375rem !important;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: 0.875rem;
+  font-weight: 500;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
-  padding: 9px 20px !important;
-  border-radius: var(--radius-full);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  white-space: nowrap !important;
-  backdrop-filter: blur(8px);
+  padding: 9px 12px;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-.tab-btn:hover,
-.filter-btn:hover {
+.tab-btn:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.25);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
-.tab-btn.active,
-.filter-btn.active {
-  background: #ffffff;
-  color: #000000;
-  font-weight: 700;
-  border-color: #ffffff;
-  box-shadow: 0 0 24px rgba(255, 255, 255, 0.35);
-  transform: translateY(-1px);
+.tab-btn.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 600;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tab-count {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.tab-btn.active .tab-count {
+  color: #ffffff;
+  background: var(--violet-dim);
+}
+
+@media (max-width: 992px) {
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .portfolio-sidebar-sticky {
+    position: static;
+  }
+  .portfolio-filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tab-btn {
+    width: auto;
+    border-radius: var(--radius-full);
+    padding: 8px 16px;
+    border-color: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+  }
 }
 
 /* ── Portfolio Grid ── */

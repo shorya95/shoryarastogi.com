@@ -241,48 +241,70 @@
   ════════════════════════════════════════════════ -->
   <section id="portfolio" aria-label="Portfolio">
     <div class="container">
+      <div class="portfolio-layout">
 
-      <div class="reveal">
-        <span class="section-label">Portfolio</span>
-        <h2 class="section-title">Work That Speaks for Itself</h2>
-        <p class="section-subtitle">
-          Industry-specific work across interior, luxury, fashion, SaaS, education, and branding — each built to move the needle.
-        </p>
+        <!-- LEFT SIDEBAR: Sticky Header & Categories (28%) -->
+        <div class="portfolio-sidebar">
+          <div class="portfolio-sidebar-sticky">
+            <span class="section-label">Selected Works</span>
+            <h2 class="section-title" style="margin-bottom: 12px; font-size: 2rem;">Work That Speaks for Itself</h2>
+            <p class="section-subtitle" style="margin-bottom: 24px; font-size: 0.875rem; line-height: 1.6;">
+              Industry-specific work across SaaS, luxury, interior, fashion, education, and branding — each built to move the needle.
+            </p>
+
+            <!-- Vertical Category Filter Menu -->
+            <div class="portfolio-filters" role="tablist" aria-label="Filter portfolio projects">
+              <button class="tab-btn active" data-filter="all" role="tab" id="tab-all">
+                <span>All Work</span> <span class="tab-count">26</span>
+              </button>
+              <button class="tab-btn" data-filter="saas" role="tab" id="tab-saas">
+                <span>SaaS &amp; AI</span> <span class="tab-count">4</span>
+              </button>
+              <button class="tab-btn" data-filter="interior" role="tab" id="tab-interior">
+                <span>Interior &amp; Decor</span> <span class="tab-count">4</span>
+              </button>
+              <button class="tab-btn" data-filter="fashion" role="tab" id="tab-fashion">
+                <span>Fashion &amp; Luxury</span> <span class="tab-count">3</span>
+              </button>
+              <button class="tab-btn" data-filter="beauty" role="tab" id="tab-beauty">
+                <span>Wellness &amp; Beauty</span> <span class="tab-count">4</span>
+              </button>
+              <button class="tab-btn" data-filter="education" role="tab" id="tab-education">
+                <span>Education &amp; EdTech</span> <span class="tab-count">3</span>
+              </button>
+              <button class="tab-btn" data-filter="b2b" role="tab" id="tab-b2b">
+                <span>B2B &amp; Enterprise</span> <span class="tab-count">4</span>
+              </button>
+              <button class="tab-btn" data-filter="impact" role="tab" id="tab-impact">
+                <span>Health &amp; Impact</span> <span class="tab-count">2</span>
+              </button>
+              <button class="tab-btn" data-filter="branding" role="tab" id="tab-branding">
+                <span>Branding &amp; Media</span> <span class="tab-count">2</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT MAIN: Cards Grid & Pagination (72%) -->
+        <div class="portfolio-main">
+          <!-- Grid -->
+          <div class="portfolio-grid">
+            <!-- Dynamically populated via JS -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="portfolio-pagination" id="portfolioPagination">
+            <button class="pagination-btn pagination-prev" id="paginationPrev" aria-label="Previous page" disabled>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="pagination-pages" id="paginationPages"></div>
+            <button class="pagination-btn pagination-next" id="paginationNext" aria-label="Next page">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
       </div>
-
-      <!-- Filter Pills -->
-      <div class="portfolio-filters" role="tablist" aria-label="Filter portfolio projects">
-        <button class="tab-btn active" data-filter="all" role="tab" id="tab-all">All Work</button>
-        <button class="tab-btn" data-filter="saas" role="tab" id="tab-saas">SaaS &amp; AI</button>
-        <button class="tab-btn" data-filter="interior" role="tab" id="tab-interior">Interior &amp; Decor</button>
-        <button class="tab-btn" data-filter="fashion" role="tab" id="tab-fashion">Fashion &amp; Luxury</button>
-        <button class="tab-btn" data-filter="beauty" role="tab" id="tab-beauty">Wellness &amp; Beauty</button>
-        <button class="tab-btn" data-filter="education" role="tab" id="tab-education">Education &amp; EdTech</button>
-        <button class="tab-btn" data-filter="b2b" role="tab" id="tab-b2b">B2B &amp; Enterprise</button>
-        <button class="tab-btn" data-filter="impact" role="tab" id="tab-impact">Health &amp; Impact</button>
-        <button class="tab-btn" data-filter="branding" role="tab" id="tab-branding">Branding &amp; Media</button>
-      </div>
-
-      <!-- Grid -->
-      <div class="portfolio-grid">
-
-
-      </div>
-
-      <!-- Pagination -->
-      <div class="portfolio-pagination" id="portfolioPagination">
-        <button class="pagination-btn pagination-prev" id="paginationPrev" aria-label="Previous page" disabled>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="pagination-pages" id="paginationPages"></div>
-        <button class="pagination-btn pagination-next" id="paginationNext" aria-label="Next page">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-
-
-
-
     </div>
   </section>
 
