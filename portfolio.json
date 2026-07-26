@@ -88,11 +88,10 @@
   },
   {
     "id": "tracyglover",
-    "category": "fashion",
-    "isFeatured": false,
-    "imagePlaceholder": "TRACY GLOVER",
-    "tag": "Shopify · Artisan · Lighting",
     "name": "Tracy Glover Studio",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1785049869997_TracyGloverStudio.png",
+    "imagePlaceholder": "TRACY GLOVER",
     "description": "Custom Shopify experience for an artisan lighting studio. Designed to showcase handcrafted product photography with an elegant, gallery-quality feel.",
     "links": [
       {
