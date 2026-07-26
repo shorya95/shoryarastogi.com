@@ -12,6 +12,13 @@
         "text": "View App \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Shopify Apps",
+      "React / Next.js",
+      "Cursor AI",
+      "CRO Strategy",
+      "Programmatic SEO"
     ]
   },
   {
@@ -50,6 +57,12 @@
         "text": "Case Study \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "UI/UX Design",
+      "UX Research",
+      "CRO Strategy",
+      "Figma"
     ]
   },
   {
@@ -70,6 +83,12 @@
         "text": "Figma \u2197",
         "isSecondary": true
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "Design Systems",
+      "Figma"
     ]
   },
   {
@@ -90,6 +109,12 @@
         "text": "Figma \u2197",
         "isSecondary": true
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "CRO Strategy",
+      "Figma"
     ]
   },
   {
@@ -110,6 +135,11 @@
         "text": "Figma \u2197",
         "isSecondary": true
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "Figma"
     ]
   },
   {
@@ -130,6 +160,12 @@
         "text": "Figma \u2197",
         "isSecondary": true
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "Design Systems",
+      "Figma"
     ]
   },
   {
@@ -146,6 +182,11 @@
         "text": "Visit Store \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "CRO Strategy"
     ]
   },
   {
@@ -162,6 +203,11 @@
         "text": "Visit Store \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "Branding"
     ]
   },
   {
@@ -172,7 +218,11 @@
     "imagePlaceholder": "PALOMA & CO",
     "description": "Warm, editorial Shopify experience for a lifestyle beauty brand. Designed to evoke personal connection and drive repeat purchases.",
     "detailedContent": "",
-    "skills": [],
+    "skills": [
+      "Shopify Plus",
+      "UI/UX Design",
+      "Figma"
+    ],
     "links": [
       {
         "url": "https://shoppalomaandco.com/",
@@ -200,6 +250,11 @@
         "text": "View Prototype \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "Generative AI"
     ]
   },
   {
@@ -216,6 +271,11 @@
         "text": "Visit Site \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "WordPress",
+      "Elementor Pro",
+      "UI/UX Design"
     ]
   },
   {
@@ -232,6 +292,11 @@
         "text": "Visit Site \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "WordPress",
+      "Elementor Pro",
+      "UI/UX Design"
     ]
   },
   {
@@ -248,6 +313,11 @@
         "text": "Visit Site \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "WordPress",
+      "Elementor Pro",
+      "UI/UX Design"
     ]
   },
   {
@@ -264,6 +334,11 @@
         "text": "Visit Site \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "WordPress",
+      "Webflow",
+      "UI/UX Design"
     ]
   },
   {
@@ -280,6 +355,11 @@
         "text": "View on Behance \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Figma",
+      "Adobe Photoshop",
+      "Branding"
     ]
   },
   {
@@ -301,6 +381,11 @@
         "text": "Instagram \u2197",
         "isSecondary": true
       }
+    ],
+    "skills": [
+      "Figma",
+      "Adobe Photoshop",
+      "Branding"
     ]
   },
   {
@@ -317,6 +402,11 @@
         "text": "View on Behance \u2197",
         "isSecondary": false
       }
+    ],
+    "skills": [
+      "Figma",
+      "Adobe Photoshop",
+      "Branding"
     ]
   },
   {
