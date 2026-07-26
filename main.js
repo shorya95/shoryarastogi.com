@@ -202,20 +202,55 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSuccess = document.getElementById('formSuccess');
 
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const submitBtn = form.querySelector('.btn-submit');
+      const originalText = submitBtn.innerHTML;
       submitBtn.textContent = 'Sending…';
       submitBtn.disabled = true;
 
-      // Simulate send (replace with real backend/Formspree)
-      setTimeout(() => {
-        form.style.display = 'none';
-        if (formSuccess) {
-          formSuccess.classList.add('visible');
+      const firstName = document.getElementById('firstName')?.value || '';
+      const lastName = document.getElementById('lastName')?.value || '';
+      const email = document.getElementById('email')?.value || '';
+      const projectType = document.getElementById('projectType')?.value || '';
+      const message = document.getElementById('message')?.value || '';
+
+      const payload = {
+        name: `${firstName} ${lastName}`.trim(),
+        email: email,
+        projectType: projectType,
+        message: message,
+        _subject: `New Portfolio Inquiry from ${firstName} ${lastName}`,
+        _template: 'table'
+      };
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/shorya95@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          if (formSuccess) {
+            formSuccess.classList.add('visible');
+          }
+        } else {
+          alert('Something went wrong while sending your message. Please try again.');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
         }
-      }, 1200);
+      } catch (err) {
+        console.error('Contact form submission error:', err);
+        alert('Could not connect to form service. Please check your internet connection and try again.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
     });
   }
 
