@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="project-info">
                 <div class="project-name">${item.name}</div>
                 <div class="project-desc">${item.description}</div>
-                ${linksHtml}
               </div>
             </div>
           `;
@@ -383,8 +382,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (item.links && item.links.length > 0) {
         let linksHtml = '';
         item.links.forEach(link => {
-          const secClass = link.isSecondary ? ' secondary' : '';
-          linksHtml += `<a href="${link.url}" target="_blank" rel="noopener" class="project-link${secClass}">${link.text}</a>`;
+          const btnClass = link.isSecondary ? 'btn btn-outline btn-sm' : 'btn btn-primary btn-sm';
+          linksHtml += `<a href="${link.url}" target="_blank" rel="noopener" class="${btnClass}">${link.text}</a>`;
         });
         modalLinks.innerHTML = linksHtml;
         modalLinks.style.display = 'flex';
