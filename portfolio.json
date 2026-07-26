@@ -166,12 +166,13 @@
   },
   {
     "id": "paloma",
-    "category": "beauty",
-    "isFeatured": false,
-    "imagePlaceholder": "PALOMA & CO",
-    "tag": "Shopify · Beauty · Lifestyle",
     "name": "Paloma & Co",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1785050924749_Paloma.png",
+    "imagePlaceholder": "PALOMA & CO",
     "description": "Warm, editorial Shopify experience for a lifestyle beauty brand. Designed to evoke personal connection and drive repeat purchases.",
+    "detailedContent": "",
+    "skills": [],
     "links": [
       {
         "url": "https://shoppalomaandco.com/",
