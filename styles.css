@@ -156,7 +156,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px max(48px, calc(50vw - 552px));
+  padding: 20px max(48px, calc(50vw - 652px));
   transition: var(--transition);
 }
 
@@ -165,7 +165,7 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border);
-  padding: 14px max(48px, calc(50vw - 552px));
+  padding: 14px max(48px, calc(50vw - 652px));
 }
 
 .nav-logo {
@@ -910,12 +910,18 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- GLOBAL MOMENT SECTION (50/50 split) ---------- */
+#global-moment-section {
+  padding: 60px 0;
+}
+
 .global-moment {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 520px;
   overflow: hidden;
   position: relative;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
 }
 
 /* LEFT: Text */
