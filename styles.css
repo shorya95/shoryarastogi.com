@@ -1077,21 +1077,37 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-/* ── Filter Tabs ── */
+/* ── Filter Tabs (Single Horizontal Row) ── */
 .portfolio-filters,
 .portfolio-tabs {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 36px;
   margin-bottom: 48px;
-  padding: 0;
+  padding: 4px 2px 12px 2px;
   background: transparent;
   border: none;
   border-radius: 0;
   width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  -webkit-overflow-scrolling: touch;
+}
+
+.portfolio-filters::-webkit-scrollbar,
+.portfolio-tabs::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+@media (min-width: 1200px) {
+  .portfolio-filters,
+  .portfolio-tabs {
+    justify-content: center;
+  }
 }
 
 .tab-btn,
@@ -1104,10 +1120,11 @@ img { max-width: 100%; display: block; }
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  padding: 9px 20px;
+  padding: 8px 16px;
   border-radius: var(--radius-full);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
+  flex-shrink: 0;
   backdrop-filter: blur(8px);
 }
 
