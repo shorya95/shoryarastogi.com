@@ -1080,51 +1080,45 @@ img { max-width: 100%; display: block; }
 /* ── Filter Tabs (Single Horizontal Row) ── */
 .portfolio-filters,
 .portfolio-tabs {
-  display: flex;
-  gap: 8px;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
+  display: flex !important;
+  gap: 6px !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
   margin-top: 36px;
   margin-bottom: 48px;
-  padding: 4px 2px 12px 2px;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  padding: 4px 0 12px 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
   -webkit-overflow-scrolling: touch;
 }
 
 .portfolio-filters::-webkit-scrollbar,
 .portfolio-tabs::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-@media (min-width: 1200px) {
-  .portfolio-filters,
-  .portfolio-tabs {
-    justify-content: center;
-  }
+  display: none !important; /* Chrome, Safari, Opera */
 }
 
 .tab-btn,
 .filter-btn {
   font-family: var(--font-sans);
-  font-size: 0.8125rem;
+  font-size: 0.78125rem !important;
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--text-secondary);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 7px 14px !important;
   border-radius: var(--radius-full);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  white-space: nowrap;
-  flex-shrink: 0;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
   backdrop-filter: blur(8px);
 }
 
@@ -2007,7 +2001,6 @@ footer {
   .global-moment-stats { gap: 24px; }
 
   .footer-inner { flex-direction: column; text-align: center; }
-  .portfolio-filters { justify-content: center; gap: 8px; }
 }
 
 /* ── CASE STUDY MODAL ── */
