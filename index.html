@@ -119,12 +119,24 @@
 
       <div class="about-grid">
 
-        <!-- LEFT: Photo -->
+        <!-- LEFT: Photo Slider -->
         <div class="about-photo-col reveal">
-          <div class="about-photo-wrap">
-            <img src="assets/about-working.jpg" alt="Shorya working at a cafe in San Francisco" loading="lazy" />
+          <div class="about-photo-wrap" id="aboutPhotoSlider">
+            <div class="about-slides-track">
+              <img class="about-slide active" src="assets/about-working.jpg" alt="Shorya working" loading="lazy" />
+              <img class="about-slide" src="assets/about-slide-2.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
+              <img class="about-slide" src="assets/about-slide-3.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
+              <img class="about-slide" src="assets/about-slide-4.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
+            </div>
+            <!-- Slider Dots -->
+            <div class="about-slider-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+            </div>
           </div>
-          <p class="about-photo-caption">San Francisco, 2024 — building between cities</p>
+          <p class="about-photo-caption">Building &amp; shipping worldwide</p>
         </div>
 
         <!-- RIGHT: Text + Skills -->
