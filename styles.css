@@ -1077,60 +1077,38 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-/* ── Filter Bar Wrapper ── */
-.portfolio-filters-wrapper {
-  position: relative;
-  width: 100%;
-  margin-top: 24px;
-  margin-bottom: 40px;
-}
-
+/* ── Portfolio Filter Tabs (Floating Chips) ── */
 .portfolio-filters,
 .portfolio-tabs {
   display: flex !important;
   gap: 10px !important;
-  flex-wrap: nowrap !important;
-  justify-content: flex-start !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
   align-items: center !important;
-  padding: 16px 12px !important;
+  margin-top: 24px;
+  margin-bottom: 44px;
+  padding: 0 !important;
   background: transparent !important;
   border: none !important;
   width: 100% !important;
   max-width: 100% !important;
-  overflow-x: auto !important;
-  scrollbar-width: none !important; /* Firefox */
-  -ms-overflow-style: none !important; /* IE/Edge */
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-}
-
-.portfolio-filters::-webkit-scrollbar,
-.portfolio-tabs::-webkit-scrollbar {
-  display: none !important; /* Chrome, Safari, Opera */
-}
-
-@media (min-width: 1320px) {
-  .portfolio-filters,
-  .portfolio-tabs {
-    justify-content: center !important;
-  }
+  overflow: visible !important;
 }
 
 .tab-btn,
 .filter-btn {
   font-family: var(--font-sans);
-  font-size: 0.8125rem !important;
+  font-size: 0.84375rem !important;
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--text-secondary);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  padding: 9px 18px !important;
+  padding: 9px 20px !important;
   border-radius: var(--radius-full);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap !important;
-  flex-shrink: 0 !important;
   backdrop-filter: blur(8px);
 }
 

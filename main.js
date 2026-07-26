@@ -108,17 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return [...projectCards].filter(cardMatchesFilter);
     }
 
-    // Enable horizontal wheel scroll for category tabs
-    const filterTabsBar = document.querySelector('.portfolio-filters');
-    if (filterTabsBar) {
-      filterTabsBar.addEventListener('wheel', (e) => {
-        if (e.deltaY !== 0) {
-          e.preventDefault();
-          filterTabsBar.scrollLeft += e.deltaY;
-        }
-      }, { passive: false });
-    }
-
     function renderPage() {
       const filtered   = getFilteredCards();
       const isAll      = currentFilter === 'all';
