@@ -108,11 +108,10 @@
   },
   {
     "id": "schoellkopf",
-    "category": "fashion",
-    "isFeatured": false,
-    "imagePlaceholder": "SCHOELLKOPF",
-    "tag": "Shopify · Heritage Brand · 1844",
     "name": "Schoellkopf 1844",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1785049880456_Schoellkopf1844.png",
+    "imagePlaceholder": "SCHOELLKOPF",
     "description": "E-commerce design for one of America's oldest heritage brands. Balanced historical gravitas with modern shopping UX.",
     "links": [
       {
