@@ -5,11 +5,11 @@
     "category": "saas",
     "imageUrl": "assets/portfolio/1785050305476_Allsteps.png",
     "imagePlaceholder": "ALLSTEPS",
-    "description": "Designed, built and shipped a live Shopify app solo using AI-accelerated dev. Automated CRO & SEO audit engine for merchants \u2014 from concept to live app in weeks.",
+    "description": "Designed, built and shipped a live Shopify app solo using AI-accelerated dev. Automated CRO & SEO audit engine for merchants — from concept to live app in weeks.",
     "links": [
       {
         "url": "https://apps.shopify.com/allsteps",
-        "text": "View App \u2197",
+        "text": "View App ↗",
         "isSecondary": false
       }
     ],
@@ -23,7 +23,7 @@
   },
   {
     "id": "emendo",
-    "name": "Emendo \u2014 AI Bookkeeping",
+    "name": "Emendo — AI Bookkeeping",
     "category": "saas",
     "imageUrl": "assets/portfolio/1784967549969_Emendo.ai.png",
     "imagePlaceholder": "EMENDO",
@@ -39,7 +39,7 @@
     "links": [
       {
         "url": "https://www.emendo.ai/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "url": "https://www.behance.net/gallery/169669573/UIUX-Case-Study-Farmsnation",
-        "text": "Case Study \u2197",
+        "text": "Case Study ↗",
         "isSecondary": false
       }
     ],
@@ -75,12 +75,12 @@
     "links": [
       {
         "url": "https://krbnyc.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.figma.com/proto/xmtRwYoVK2ryyfdfJpKdha/KRB-NYC?page-id=0%3A1&node-id=632-2200&viewport=1913%2C1564%2C0.12&scaling=scale-down-width",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": true
       }
     ],
@@ -101,12 +101,12 @@
     "links": [
       {
         "url": "https://harbingerla.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.figma.com/proto/qau1LK35lgYSKqkLetHrY8/Harbinger-LA---CT?page-id=0%3A1&node-id=396-788&viewport=-43%2C359%2C0.02&scaling=scale-down-width",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": true
       }
     ],
@@ -127,12 +127,12 @@
     "links": [
       {
         "url": "https://tracygloverstudio.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.figma.com/proto/40okq3f2FqwB4B1AdTYSpW/Tracy-Glover-Studio?page-id=614%3A1969&node-id=614-2721&viewport=369%2C393%2C0.03&scaling=scale-down-width",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": true
       }
     ],
@@ -152,12 +152,12 @@
     "links": [
       {
         "url": "https://schoellkopf1844.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.figma.com/proto/eORKuZFuJVj5l2Magt6bud/SCHOELLKOPF?page-id=16%3A3&node-id=840-1439&viewport=69%2C396%2C0.02&scaling=scale-down-width",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": true
       }
     ],
@@ -173,13 +173,13 @@
     "category": "beauty",
     "isFeatured": false,
     "imagePlaceholder": "JIA",
-    "tag": "Shopify \u00b7 Jewellery \u00b7 Lifestyle",
+    "tag": "Shopify · Jewellery · Lifestyle",
     "name": "Jia Collection",
     "description": "Shopify design for a premium jewellery brand. Elegant visual design system focused on product storytelling and trust-building for high-AOV purchases.",
     "links": [
       {
         "url": "https://jiacollection.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       }
     ],
@@ -194,13 +194,13 @@
     "category": "beauty",
     "isFeatured": false,
     "imagePlaceholder": "PROTECT MY SHOES",
-    "tag": "Shopify \u00b7 Lifestyle \u00b7 Footwear Care",
+    "tag": "Shopify · Lifestyle · Footwear Care",
     "name": "Protect My Shoes",
     "description": "Full brand identity + Shopify store for a sneaker care brand. Created branding, design system, and conversion-optimised storefront.",
     "links": [
       {
         "url": "https://www.protectmyshoes.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       }
     ],
@@ -226,12 +226,12 @@
     "links": [
       {
         "url": "https://shoppalomaandco.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.figma.com/design/oTDRjo7STX7LjG7t7yZV3W/Paloma-Contreras?node-id=0-1&t=IedmHNc5TqjxIWGP-1",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": true
       }
     ]
@@ -241,13 +241,13 @@
     "category": "beauty",
     "isFeatured": false,
     "imagePlaceholder": "SETA SKIN",
-    "tag": "UI Design \u00b7 Skincare \u00b7 DTC",
+    "tag": "UI Design · Skincare · DTC",
     "name": "Seta Skin",
-    "description": "Premium skincare brand UI design. Minimal, clinical aesthetic with strong conversion intent \u2014 designed to build trust for DTC skincare.",
+    "description": "Premium skincare brand UI design. Minimal, clinical aesthetic with strong conversion intent — designed to build trust for DTC skincare.",
     "links": [
       {
         "url": "https://www.figma.com/proto/HY19fVc3HYcRdT8hlVPxpQ/Seta-SkinSeta-Skin?page-id=0%3A1&node-id=1-538&scaling=scale-down&mode=design&t=vj47oM5dPZErhm4T-1",
-        "text": "View Prototype \u2197",
+        "text": "View Prototype ↗",
         "isSecondary": false
       }
     ],
@@ -262,13 +262,13 @@
     "category": "education",
     "isFeatured": true,
     "imagePlaceholder": "UFV INDIA",
-    "tag": "WordPress \u00b7 Education \u00b7 University",
+    "tag": "WordPress · Education · University",
     "name": "UFV India",
-    "description": "Full website design and development for UFV India \u2014 a Canadian university's India gateway. Structured for international student lead generation.",
+    "description": "Full website design and development for UFV India — a Canadian university's India gateway. Structured for international student lead generation.",
     "links": [
       {
         "url": "https://www.ufv.in/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ],
@@ -283,13 +283,13 @@
     "category": "education",
     "isFeatured": false,
     "imagePlaceholder": "CHITKARA",
-    "tag": "WordPress \u00b7 Education \u00b7 Global",
+    "tag": "WordPress · Education · Global",
     "name": "Chitkara Global",
-    "description": "Global outreach website for Chitkara University \u2014 designed to communicate international programs and drive student applications.",
+    "description": "Global outreach website for Chitkara University — designed to communicate international programs and drive student applications.",
     "links": [
       {
         "url": "https://www.chitkara.edu.in/global/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ],
@@ -304,13 +304,13 @@
     "category": "education",
     "isFeatured": false,
     "imagePlaceholder": "LYRA LABS",
-    "tag": "WordPress \u00b7 Tech Startup \u00b7 B2B",
+    "tag": "WordPress · Tech Startup · B2B",
     "name": "Lyra Labs",
-    "description": "Designed and developed a clean, high-conversion site for a tech startup \u2014 focused on clearly communicating product value to B2B buyers.",
+    "description": "Designed and developed a clean, high-conversion site for a tech startup — focused on clearly communicating product value to B2B buyers.",
     "links": [
       {
         "url": "https://lyralab.com/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ],
@@ -325,13 +325,13 @@
     "category": "education",
     "isFeatured": false,
     "imagePlaceholder": "JUMP TECH",
-    "tag": "Webflow \u00b7 Tech Solutions \u00b7 B2B",
+    "tag": "Webflow · Tech Solutions · B2B",
     "name": "Jump Tech Solutions",
-    "description": "Webflow website for a technology solutions company \u2014 professional, trust-building design targeting enterprise clients.",
+    "description": "Webflow website for a technology solutions company — professional, trust-building design targeting enterprise clients.",
     "links": [
       {
         "url": "https://jumptechsolutions.com/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ],
@@ -346,13 +346,13 @@
     "category": "branding",
     "isFeatured": false,
     "imagePlaceholder": "PREMIER ATTIRE",
-    "tag": "Branding \u00b7 Identity \u00b7 Fashion",
+    "tag": "Branding · Identity · Fashion",
     "name": "Premier Attire",
     "description": "Complete brand identity and style guideline for a premium fashion label. Logo, colour system, typography, and brand voice.",
     "links": [
       {
         "url": "https://www.behance.net/gallery/168932523/Premier-Attire-Branding",
-        "text": "View on Behance \u2197",
+        "text": "View on Behance ↗",
         "isSecondary": false
       }
     ],
@@ -367,40 +367,19 @@
     "category": "branding",
     "isFeatured": false,
     "imagePlaceholder": "POLITICL",
-    "tag": "Branding \u00b7 Social Media \u00b7 Design",
+    "tag": "Branding · Social Media · Design",
     "name": "Politicl",
-    "description": "Brand identity and social media design system for Politicl \u2014 a political content brand. Bold visual language built for high-scroll engagement.",
+    "description": "Brand identity and social media design system for Politicl — a political content brand. Bold visual language built for high-scroll engagement.",
     "links": [
       {
         "url": "https://www.behance.net/gallery/168933149/Politicl-Branding-Social-Media",
-        "text": "Behance \u2197",
+        "text": "Behance ↗",
         "isSecondary": false
       },
       {
         "url": "https://www.instagram.com/politicldotcom/",
-        "text": "Instagram \u2197",
+        "text": "Instagram ↗",
         "isSecondary": true
-      }
-    ],
-    "skills": [
-      "Figma",
-      "Adobe Photoshop",
-      "Branding"
-    ]
-  },
-  {
-    "id": "ayana",
-    "category": "branding",
-    "isFeatured": false,
-    "imagePlaceholder": "AYANA",
-    "tag": "Email Design \u00b7 Fashion \u00b7 Retail",
-    "name": "Ayana Design",
-    "description": "Fashion retail newsletter email design \u2014 art-directed to drive clicks and reflect premium brand aesthetic in the inbox.",
-    "links": [
-      {
-        "url": "https://www.behance.net/gallery/172586407/Fashion-Retail-Newsletter-Email",
-        "text": "View on Behance \u2197",
-        "isSecondary": false
       }
     ],
     "skills": [
@@ -424,7 +403,7 @@
     "links": [
       {
         "url": "https://brooklynbotany.com/",
-        "text": "Visit Store \u2197",
+        "text": "Visit Store ↗",
         "isSecondary": false
       }
     ]
@@ -444,7 +423,7 @@
     "links": [
       {
         "url": "https://evolutionofbreath.com/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
@@ -464,7 +443,7 @@
     "links": [
       {
         "url": "https://www.figma.com/proto/C1gTFY9ZO7G0F766wYFFkd/FlickPlex?page-id=78%3A498&type=design&node-id=115-1495&viewport=582%2C712%2C0.19&t=bRMTdf9D2UaSxymx-1&scaling=scale-down&starting-point-node-id=115%3A1495&mode=design",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": false
       }
     ]
@@ -485,7 +464,7 @@
     "links": [
       {
         "url": "https://www.figma.com/design/A227VVcdPlH6o5XiWnP2Ng/Readynez?node-id=0-1&t=yoHqUe4Zk7jM8HFd-1",
-        "text": "Figma \u2197",
+        "text": "Figma ↗",
         "isSecondary": false
       }
     ]
@@ -505,7 +484,7 @@
     "links": [
       {
         "url": "https://enestit.com/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
@@ -525,7 +504,7 @@
     "links": [
       {
         "url": "http://parkstone.sk/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
@@ -545,7 +524,7 @@
     "links": [
       {
         "url": "https://www.puhoslovespeople.fi/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
@@ -565,7 +544,7 @@
     "links": [
       {
         "url": "https://preventit.in/",
-        "text": "Visit Site \u2197",
+        "text": "Visit Site ↗",
         "isSecondary": false
       }
     ]
