@@ -1081,13 +1081,13 @@ img { max-width: 100%; display: block; }
 .portfolio-filters,
 .portfolio-tabs {
   display: flex !important;
-  gap: 6px !important;
+  gap: 8px !important;
   flex-wrap: nowrap !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: center !important;
-  margin-top: 36px;
-  margin-bottom: 48px;
-  padding: 4px 0 12px 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  padding: 16px 4px !important;
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
@@ -1102,6 +1102,13 @@ img { max-width: 100%; display: block; }
 .portfolio-filters::-webkit-scrollbar,
 .portfolio-tabs::-webkit-scrollbar {
   display: none !important; /* Chrome, Safari, Opera */
+}
+
+@media (min-width: 1080px) {
+  .portfolio-filters,
+  .portfolio-tabs {
+    justify-content: center !important;
+  }
 }
 
 .tab-btn,
