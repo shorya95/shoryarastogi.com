@@ -91,8 +91,35 @@
       object-fit: cover;
       display: block;
     }
-    .apc-title { font-weight: 600; font-size: 1.1rem; }
-    .apc-category { font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+    .apc-title { font-weight: 600; font-size: 1rem; color: #ffffff; }
+    .apc-cat-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--violet-light);
+      background: var(--violet-dim);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+    .apc-skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .apc-skill-pill {
+      font-size: 0.725rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+    }
     .apc-actions {
       display: flex;
       gap: 12px;
