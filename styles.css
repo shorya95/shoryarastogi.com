@@ -910,18 +910,12 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- GLOBAL MOMENT SECTION (50/50 split) ---------- */
-#global-moment-section {
-  padding: 60px 0;
-}
-
 .global-moment {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 520px;
   overflow: hidden;
   position: relative;
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--border);
 }
 
 /* LEFT: Text */
@@ -930,7 +924,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 72px 80px max(48px, calc(50vw - 552px));
+  padding: 80px 72px 80px max(48px, calc(50vw - 652px));
   position: relative;
   overflow: hidden;
 }
