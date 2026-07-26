@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const categoryNames = {
         saas: 'SaaS & AI',
-        fashion: 'Fashion & Luxury',
+        fashion: 'Interior & Luxury',
         beauty: 'Beauty & Lifestyle',
         education: 'Education & B2B',
         branding: 'Branding'
