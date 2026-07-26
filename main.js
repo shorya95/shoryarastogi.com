@@ -100,24 +100,23 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentFilter    = 'all';
     let currentPage      = 1;
 
-    const masterCatMap = {
-      saas: ['saas'],
-      lifestyle: ['interior', 'fashion', 'beauty'],
-      enterprise: ['education', 'b2b'],
-      branding_impact: ['branding', 'impact']
-    };
-
     function cardMatchesFilter(card) {
-      if (currentFilter === 'all') return true;
-      const cat = card.dataset.category;
-      if (masterCatMap[currentFilter]) {
-        return masterCatMap[currentFilter].includes(cat);
-      }
-      return cat === currentFilter;
+      return currentFilter === 'all' || card.dataset.category === currentFilter;
     }
 
     function getFilteredCards() {
       return [...projectCards].filter(cardMatchesFilter);
+    }
+
+    // Enable horizontal wheel scroll for category tabs
+    const filterTabsBar = document.querySelector('.portfolio-filters');
+    if (filterTabsBar) {
+      filterTabsBar.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) {
+          e.preventDefault();
+          filterTabsBar.scrollLeft += e.deltaY;
+        }
+      }, { passive: false });
     }
 
     function renderPage() {
