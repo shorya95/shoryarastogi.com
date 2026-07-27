@@ -70,6 +70,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
 }
 
 body {
@@ -79,7 +81,9 @@ body {
   font-size: 18px;
   line-height: 1.65;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1325,8 +1329,21 @@ img { max-width: 100%; display: block; }
 .project-thumb {
   position: relative;
   width: 100%;
-  height: 280px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  background: var(--bg-surface);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center top !important;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.project-card:hover .project-thumb img {
+  transform: scale(1.05);
 }
 
 .project-thumb-placeholder {
@@ -2431,6 +2448,16 @@ footer {
   }
   .portfolio-grid {
     grid-template-columns: 1fr !important;
+  }
+  .project-thumb {
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+  }
+  .project-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
   }
   .about-highlights {
     grid-template-columns: repeat(2, 1fr);
