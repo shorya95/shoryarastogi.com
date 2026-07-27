@@ -498,14 +498,15 @@
     "id": "rackpeople",
     "name": "RackPeople",
     "category": "b2b",
+    "imageUrl": "assets/portfolio/1785179320560_RackPeople.png",
     "imagePlaceholder": "RACKPEOPLE",
     "description": "Custom Figma UI design and WordPress Elementor development for Denmark-based IT infrastructure & cloud server solutions provider.",
     "detailedContent": "<h3>IT Infrastructure Platform</h3><p>Designed on Figma and custom-developed on WordPress using Elementor Pro for Denmark's RackPeople. Built to highlight enterprise server hosting, cloud infrastructure, and technical IT services with clear B2B conversion paths.</p>",
     "skills": [
       "Figma",
+      "UI/UX Design",
       "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
+      "Elementor Pro"
     ],
     "links": [
       {
