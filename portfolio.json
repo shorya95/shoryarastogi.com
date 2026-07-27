@@ -478,14 +478,15 @@
     "id": "parkstone",
     "name": "Parkstone",
     "category": "b2b",
+    "imageUrl": "assets/portfolio/1785175381887_Parkstone.png",
     "imagePlaceholder": "PARKSTONE",
     "description": "Modern Webflow corporate site for European real estate investment and development firm Parkstone.",
-    "skills": [
-      "Webflow",
-      "UI/UX Design",
-      "Figma"
-    ],
     "detailedContent": "<h3>Real Estate Platform</h3><p>Built a luxury B2B Webflow web experience for Parkstone, emphasizing portfolio showcase and architectural project visual presentation.</p>",
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "Webflow"
+    ],
     "links": [
       {
         "url": "http://parkstone.sk/",
