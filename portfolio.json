@@ -496,26 +496,6 @@
     ]
   },
   {
-    "id": "puhos",
-    "name": "Puhos Loves People",
-    "category": "impact",
-    "imagePlaceholder": "PUHOS",
-    "description": "WordPress community and social impact initiative website built for Finland-based non-profit Puhos.",
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
-    ],
-    "detailedContent": "<h3>Non-Profit Web Design</h3><p>Designed a warm, accessible community hub for Finland's Puhos Loves People initiative to drive community engagement and awareness.</p>",
-    "links": [
-      {
-        "url": "https://www.puhoslovespeople.fi/",
-        "text": "Visit Site ↗",
-        "isSecondary": false
-      }
-    ]
-  },
-  {
     "id": "preventit",
     "name": "PreventIt",
     "category": "impact",
