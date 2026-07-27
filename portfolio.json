@@ -324,23 +324,23 @@
   },
   {
     "id": "jumptech",
-    "category": "b2b",
-    "isFeatured": false,
-    "imagePlaceholder": "JUMP TECH",
-    "tag": "Webflow · Tech Solutions · B2B",
     "name": "Jump Tech Solutions",
+    "category": "b2b",
+    "imageUrl": "assets/portfolio/1785175345970_JumpTechSolutions.png",
+    "imagePlaceholder": "JUMP TECH",
     "description": "Webflow website for a technology solutions company — professional, trust-building design targeting enterprise clients.",
+    "detailedContent": "",
+    "skills": [
+      "UI/UX Design",
+      "WordPress",
+      "Webflow"
+    ],
     "links": [
       {
         "url": "https://jumptechsolutions.com/",
         "text": "Visit Site ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "WordPress",
-      "Webflow",
-      "UI/UX Design"
     ]
   },
   {
