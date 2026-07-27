@@ -411,14 +411,15 @@
     "id": "evolutionofbreath",
     "name": "Evolution of Breath",
     "category": "beauty",
+    "imageUrl": "assets/portfolio/1785162942669_EvolutionofBreathe.png",
     "imagePlaceholder": "EOB",
     "description": "Custom Webflow platform for breathwork and wellness experiences. Clean, calming aesthetic built for brand immersion and bookings.",
-    "skills": [
-      "Webflow",
-      "UI/UX Design",
-      "Figma"
-    ],
     "detailedContent": "<h3>Wellness Experience Design</h3><p>Crafted an immersive Webflow web application for Evolution of Breath, featuring serene visual layouts, event booking integration, and custom animations.</p>",
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "Webflow"
+    ],
     "links": [
       {
         "url": "https://evolutionofbreath.com/",
