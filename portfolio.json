@@ -365,12 +365,16 @@
   },
   {
     "id": "politicl",
-    "category": "branding",
-    "isFeatured": false,
-    "imagePlaceholder": "POLITICL",
-    "tag": "Branding · Social Media · Design",
     "name": "Politicl",
+    "category": "branding",
+    "imageUrl": "assets/portfolio/1785175980652_Getpoliticl.png",
+    "imagePlaceholder": "POLITICL",
     "description": "Brand identity and social media design system for Politicl — a political content brand. Bold visual language built for high-scroll engagement.",
+    "detailedContent": "",
+    "skills": [
+      "Figma",
+      "Adobe Photoshop"
+    ],
     "links": [
       {
         "url": "https://www.behance.net/gallery/168933149/Politicl-Branding-Social-Media",
@@ -382,11 +386,6 @@
         "text": "Instagram ↗",
         "isSecondary": true
       }
-    ],
-    "skills": [
-      "Figma",
-      "Adobe Photoshop",
-      "Branding"
     ]
   },
   {
