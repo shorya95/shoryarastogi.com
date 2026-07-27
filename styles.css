@@ -2123,13 +2123,23 @@ footer {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-wrap { display: none; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-photo-wrap {
+    display: block !important;
+    max-width: 380px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero-photo-frame {
+    aspect-ratio: 4/5;
+    max-height: 480px;
+  }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo-col { position: static; }
   .portfolio-grid { grid-template-columns: 1fr 1fr; }
-  .global-moment { grid-template-columns: 1fr 340px; }
-  .global-moment-content { padding: 56px 40px; }
 }
 
 @media (max-width: 768px) {
