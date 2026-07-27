@@ -5,6 +5,12 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── CLEAN URL (Remove index.html from URL bar) ─────────────
+  if (window.location.pathname.endsWith('/index.html')) {
+    const cleanUrl = window.location.origin + window.location.pathname.replace(/\/index\.html$/, '/') + window.location.hash;
+    window.history.replaceState(null, '', cleanUrl);
+  }
+
   // ── NAV SCROLL EFFECT ──────────────────────────────────────
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
