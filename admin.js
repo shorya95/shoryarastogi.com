@@ -274,7 +274,6 @@ function updateAdminFilterCounts() {
     beauty: currentPortfolio.filter(p => p.category === 'beauty').length,
     education: currentPortfolio.filter(p => p.category === 'education').length,
     b2b: currentPortfolio.filter(p => p.category === 'b2b').length,
-    impact: currentPortfolio.filter(p => p.category === 'impact').length,
     branding: currentPortfolio.filter(p => p.category === 'branding').length
   };
 
@@ -286,7 +285,6 @@ function updateAdminFilterCounts() {
     beauty: 'Wellness & Beauty',
     education: 'Education & EdTech',
     b2b: 'B2B & Enterprise',
-    impact: 'Health & Impact',
     branding: 'Media'
   };
 
@@ -329,7 +327,6 @@ function renderDashboard() {
       beauty: 'Wellness & Beauty',
       education: 'Education & EdTech',
       b2b: 'B2B & Enterprise',
-      impact: 'Health & Impact',
       branding: 'Media'
     };
     const catDisplay = catMap[item.category] || item.category;

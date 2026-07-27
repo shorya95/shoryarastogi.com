@@ -402,7 +402,6 @@ document.addEventListener('DOMContentLoaded', () => {
         beauty: 'Wellness & Beauty',
         education: 'Education & EdTech',
         b2b: 'B2B & Enterprise',
-        impact: 'Health & Impact',
         branding: 'Media'
       };
       modalCategory.textContent = categoryNames[item.category] || item.category;
