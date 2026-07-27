@@ -493,5 +493,47 @@
         "isSecondary": false
       }
     ]
+  },
+  {
+    "id": "rackpeople",
+    "name": "RackPeople",
+    "category": "b2b",
+    "imagePlaceholder": "RACKPEOPLE",
+    "description": "Custom Figma UI design and WordPress Elementor development for Denmark-based IT infrastructure & cloud server solutions provider.",
+    "detailedContent": "<h3>IT Infrastructure Platform</h3><p>Designed on Figma and custom-developed on WordPress using Elementor Pro for Denmark's RackPeople. Built to highlight enterprise server hosting, cloud infrastructure, and technical IT services with clear B2B conversion paths.</p>",
+    "skills": [
+      "Figma",
+      "WordPress",
+      "Elementor Pro",
+      "UI/UX Design"
+    ],
+    "links": [
+      {
+        "url": "https://rackpeople.dk/",
+        "text": "Visit Site ↗",
+        "isSecondary": false
+      }
+    ]
+  },
+  {
+    "id": "bocahistory",
+    "name": "Boca History",
+    "category": "education",
+    "imagePlaceholder": "BOCA HISTORY",
+    "description": "Figma UI/UX design & WordPress Elementor site for the Boca Raton Historical Society & Schmidt Boca Raton History Museum.",
+    "detailedContent": "<h3>Historical Museum Platform</h3><p>Designed on Figma and built on WordPress with Elementor Pro for the Boca Raton Historical Society & Museum in Florida. Created an engaging digital experience for exhibit showcases, historical archives, educational programs, and event ticketing.</p>",
+    "skills": [
+      "Figma",
+      "WordPress",
+      "Elementor Pro",
+      "UI/UX Design"
+    ],
+    "links": [
+      {
+        "url": "https://bocahistory.org/",
+        "text": "Visit Site ↗",
+        "isSecondary": false
+      }
+    ]
   }
 ]
