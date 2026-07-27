@@ -545,8 +545,8 @@ img { max-width: 100%; display: block; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 56px;
+  grid-template-columns: 420px 1fr;
+  gap: 64px;
   align-items: start;
   margin-top: 52px;
 }
@@ -561,6 +561,7 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-xl);
   overflow: hidden;
   aspect-ratio: 4/5;
+  max-height: 560px;
   box-shadow: 0 0 0 1px rgba(255,255,255,0.15), 0 24px 60px rgba(0,0,0,0.5);
   background: var(--bg-surface);
 }
