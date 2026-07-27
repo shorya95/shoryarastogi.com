@@ -457,14 +457,15 @@
     "id": "enestit",
     "name": "eNest IT",
     "category": "b2b",
+    "imageUrl": "assets/portfolio/1785175363364_eNestIT.png",
     "imagePlaceholder": "ENEST IT",
     "description": "Custom WordPress corporate website for an IT services and software development agency.",
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
-    ],
     "detailedContent": "<h3>Agency Platform Design</h3><p>Designed and deployed a responsive corporate WordPress website for eNest IT to showcase technical capabilities and generate B2B inbound leads.</p>",
+    "skills": [
+      "UI/UX Design",
+      "WordPress",
+      "Elementor Pro"
+    ],
     "links": [
       {
         "url": "https://enestit.com/",
