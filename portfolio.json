@@ -303,23 +303,23 @@
   },
   {
     "id": "lyralab",
-    "category": "b2b",
-    "isFeatured": false,
-    "imagePlaceholder": "LYRA LABS",
-    "tag": "WordPress · Tech Startup · B2B",
     "name": "Lyra Labs",
+    "category": "b2b",
+    "imageUrl": "assets/portfolio/1785175334334_LyraLabs.png",
+    "imagePlaceholder": "LYRA LABS",
     "description": "Designed and developed a clean, high-conversion site for a tech startup — focused on clearly communicating product value to B2B buyers.",
+    "detailedContent": "",
+    "skills": [
+      "UI/UX Design",
+      "WordPress",
+      "Elementor Pro"
+    ],
     "links": [
       {
         "url": "https://lyralab.com/",
         "text": "Visit Site ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
     ]
   },
   {
