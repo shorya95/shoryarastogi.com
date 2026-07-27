@@ -390,14 +390,15 @@
     "id": "brooklynbotany",
     "name": "Brooklyn Botany",
     "category": "beauty",
+    "imageUrl": "assets/portfolio/1785162715954_BrooklynBotany.png",
     "imagePlaceholder": "BROOKLYN BOTANY",
     "description": "Shopify e-commerce store for a premium botanical skincare and personal care brand.",
+    "detailedContent": "<h3>E-Commerce Experience</h3><p>Designed and built a clean Shopify storefront for Brooklyn Botany, highlighting natural ingredients and optimizing for high mobile conversion.</p>",
     "skills": [
-      "Shopify Plus",
       "UI/UX Design",
+      "Shopify Plus",
       "CRO Strategy"
     ],
-    "detailedContent": "<h3>E-Commerce Experience</h3><p>Designed and built a clean Shopify storefront for Brooklyn Botany, highlighting natural ingredients and optimizing for high mobile conversion.</p>",
     "links": [
       {
         "url": "https://brooklynbotany.com/",
