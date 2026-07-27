@@ -342,23 +342,22 @@
   },
   {
     "id": "premierattire",
-    "category": "fashion",
-    "isFeatured": false,
-    "imagePlaceholder": "PREMIER ATTIRE",
-    "tag": "Branding · Identity · Fashion",
     "name": "Premier Attire",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1785139286539_PremierAttire.png",
+    "imagePlaceholder": "PREMIER ATTIRE",
     "description": "Complete brand identity and style guideline for a premium fashion label. Logo, colour system, typography, and brand voice.",
+    "detailedContent": "",
+    "skills": [
+      "Figma",
+      "Adobe Photoshop"
+    ],
     "links": [
       {
         "url": "https://www.behance.net/gallery/168932523/Premier-Attire-Branding",
         "text": "View on Behance ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "Figma",
-      "Adobe Photoshop",
-      "Branding"
     ]
   },
   {
