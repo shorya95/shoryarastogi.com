@@ -287,7 +287,7 @@ function updateAdminFilterCounts() {
     education: 'Education & EdTech',
     b2b: 'B2B & Enterprise',
     impact: 'Health & Impact',
-    branding: 'Branding & Media'
+    branding: 'Media'
   };
 
   container.querySelectorAll('.admin-tab-btn').forEach(btn => {
@@ -330,7 +330,7 @@ function renderDashboard() {
       education: 'Education & EdTech',
       b2b: 'B2B & Enterprise',
       impact: 'Health & Impact',
-      branding: 'Branding & Media'
+      branding: 'Media'
     };
     const catDisplay = catMap[item.category] || item.category;
 

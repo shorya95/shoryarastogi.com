@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
         education: 'Education & EdTech',
         b2b: 'B2B & Enterprise',
         impact: 'Health & Impact',
-        branding: 'Branding & Media'
+        branding: 'Media'
       };
       modalCategory.textContent = categoryNames[item.category] || item.category;
       modalTitle.textContent = item.name;
