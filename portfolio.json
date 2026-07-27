@@ -258,23 +258,26 @@
   },
   {
     "id": "ufv",
-    "category": "education",
-    "isFeatured": true,
-    "imagePlaceholder": "UFV INDIA",
-    "tag": "WordPress · Education · University",
     "name": "UFV India",
+    "category": "education",
+    "imageUrl": "assets/portfolio/1785165637437_FVI.png",
+    "imagePlaceholder": "UFV INDIA",
     "description": "Full website design and development for UFV India — a Canadian university's India gateway. Structured for international student lead generation.",
+    "detailedContent": "",
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "WordPress",
+      "Elementor Pro",
+      "Conversion Funnels",
+      "Analytics"
+    ],
     "links": [
       {
         "url": "https://www.ufv.in/",
         "text": "Visit Site ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
     ]
   },
   {
