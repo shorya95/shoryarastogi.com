@@ -279,23 +279,23 @@
   },
   {
     "id": "chitkara",
-    "category": "education",
-    "isFeatured": false,
-    "imagePlaceholder": "CHITKARA",
-    "tag": "WordPress · Education · Global",
     "name": "Chitkara Global",
+    "category": "education",
+    "imageUrl": "assets/portfolio/1785165507359_ChitkaraUniversity.png",
+    "imagePlaceholder": "CHITKARA",
     "description": "Global outreach website for Chitkara University — designed to communicate international programs and drive student applications.",
+    "detailedContent": "",
+    "skills": [
+      "UI/UX Design",
+      "WordPress",
+      "Elementor Pro"
+    ],
     "links": [
       {
         "url": "https://www.chitkara.edu.in/global/",
         "text": "Visit Site ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
     ]
   },
   {
