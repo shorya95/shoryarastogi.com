@@ -2143,11 +2143,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .container { padding: 0 24px; }
-  .nav { padding: 18px 24px; }
-  .nav.scrolled { padding: 14px 24px; }
-  .nav-links { display: none; }
-  .nav-hamburger { display: flex; }
+  .container { padding: 0 20px; }
+  .nav { padding: 14px 20px; }
+  .nav.scrolled { padding: 12px 20px; }
+  .nav-links { display: flex !important; }
+  .nav-cta {
+    padding: 8px 16px !important;
+    font-size: 0.8125rem !important;
+  }
+  .nav-hamburger { display: none !important; }
 
   #hero { padding: 100px 0 60px; }
   .hero-title {
