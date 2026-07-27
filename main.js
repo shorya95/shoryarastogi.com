@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           let thumbHtml = '';
           if (item.imageUrl) {
-            thumbHtml = `<img src="${item.imageUrl}" alt="${item.name}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" />`;
+            thumbHtml = `<img src="${item.imageUrl}" alt="${item.name}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block;" />`;
           } else {
             thumbHtml = `<div class="project-thumb-placeholder">${item.imagePlaceholder}</div>`;
           }
