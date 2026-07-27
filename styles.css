@@ -2150,7 +2150,15 @@ footer {
   .nav-hamburger { display: flex; }
 
   #hero { padding: 100px 0 60px; }
-  .hero-title { font-size: clamp(1.5rem, 6vw, 2.1rem); }
+  .hero-title {
+    font-size: clamp(2.1rem, 8.5vw, 2.75rem) !important;
+    line-height: 1.28 !important;
+    letter-spacing: -0.03em !important;
+  }
+  .hero-description {
+    font-size: 1.0625rem !important;
+    line-height: 1.7 !important;
+  }
   .hero-stats { gap: 28px; }
 
   .about-grid { gap: 40px; }
