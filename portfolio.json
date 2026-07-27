@@ -494,25 +494,5 @@
         "isSecondary": false
       }
     ]
-  },
-  {
-    "id": "preventit",
-    "name": "PreventIt",
-    "category": "impact",
-    "imagePlaceholder": "PREVENTIT",
-    "description": "WordPress digital platform for a health prevention and awareness initiative.",
-    "skills": [
-      "WordPress",
-      "Elementor Pro",
-      "UI/UX Design"
-    ],
-    "detailedContent": "<h3>Health Tech Platform</h3><p>Created a user-friendly WordPress web portal for PreventIt, structuring medical guidance and preventive health resources cleanly.</p>",
-    "links": [
-      {
-        "url": "https://preventit.in/",
-        "text": "Visit Site ↗",
-        "isSecondary": false
-      }
-    ]
   }
 ]
