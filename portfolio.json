@@ -435,15 +435,16 @@
     "id": "readynez",
     "name": "Readynez",
     "category": "education",
+    "imageUrl": "assets/portfolio/1785166033099_Readynez.png",
     "imagePlaceholder": "READYNEZ",
     "description": "UI/UX and Webflow digital design system for an IT training and certification platform.",
-    "skills": [
-      "Webflow",
-      "UI/UX Design",
-      "Figma",
-      "Design Systems"
-    ],
     "detailedContent": "<h3>EdTech Design System</h3><p>Architected a high-scalability UI design system and Webflow layout for Readynez IT training, improving course discovery and conversion flows.</p>",
+    "skills": [
+      "Figma",
+      "UI/UX Design",
+      "Design Systems",
+      "Webflow"
+    ],
     "links": [
       {
         "url": "https://www.figma.com/design/A227VVcdPlH6o5XiWnP2Ng/Readynez?node-id=0-1&t=yoHqUe4Zk7jM8HFd-1",
