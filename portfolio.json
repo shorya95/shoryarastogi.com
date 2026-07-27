@@ -170,23 +170,23 @@
   },
   {
     "id": "jiacollection",
-    "category": "fashion",
-    "isFeatured": false,
-    "imagePlaceholder": "JIA",
-    "tag": "Shopify · Jewellery · Lifestyle",
     "name": "Jia Collection",
+    "category": "fashion",
+    "imageUrl": "assets/portfolio/1785139258582_JiaCollection.png",
+    "imagePlaceholder": "JIA",
     "description": "Shopify design for a premium jewellery brand. Elegant visual design system focused on product storytelling and trust-building for high-AOV purchases.",
+    "detailedContent": "",
+    "skills": [
+      "UI/UX Design",
+      "Shopify Plus",
+      "CRO Strategy"
+    ],
     "links": [
       {
         "url": "https://jiacollection.com/",
         "text": "Visit Store ↗",
         "isSecondary": false
       }
-    ],
-    "skills": [
-      "Shopify Plus",
-      "UI/UX Design",
-      "CRO Strategy"
     ]
   },
   {
