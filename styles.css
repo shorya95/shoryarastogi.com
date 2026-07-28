@@ -359,8 +359,8 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-description strong {
-  color: var(--text-primary);
-  font-weight: 600;
+  color: inherit;
+  font-weight: inherit;
 }
 
 /* Hero Buttons */
@@ -658,8 +658,8 @@ img { max-width: 100%; display: block; }
 .about-text p:last-child { margin-bottom: 0; }
 
 .about-text strong {
-  color: var(--text-primary);
-  font-weight: 600;
+  color: inherit;
+  font-weight: inherit;
 }
 
 /* Bio Highlights Grid */
