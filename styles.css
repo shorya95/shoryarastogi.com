@@ -1020,7 +1020,7 @@ img { max-width: 100%; display: block; }
 .global-moment {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 520px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -1174,7 +1174,7 @@ img { max-width: 100%; display: block; }
   .global-moment { grid-template-columns: 1fr !important; }
   .global-moment-photo {
     width: 100% !important;
-    height: 450px !important;
+    height: 560px !important;
     aspect-ratio: unset !important;
     max-height: none !important;
     min-height: 0 !important;
@@ -2190,7 +2190,7 @@ footer {
   .global-moment { grid-template-columns: 1fr !important; }
   .global-moment-photo {
     width: 100% !important;
-    height: 420px !important;
+    height: 520px !important;
     aspect-ratio: unset !important;
   }
   .global-moment-content { padding: 48px 24px; }
@@ -2519,7 +2519,7 @@ footer {
   }
   .global-moment-photo {
     width: 100% !important;
-    height: 400px !important;
+    height: 480px !important;
     aspect-ratio: unset !important;
     max-height: none !important;
     min-height: 0 !important;
