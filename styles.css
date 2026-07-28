@@ -1172,7 +1172,16 @@ img { max-width: 100%; display: block; }
 /* Responsive */
 @media (max-width: 900px) {
   .global-moment { grid-template-columns: 1fr; }
-  .global-moment-photo { height: 340px; }
+  .global-moment-photo {
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+    max-height: 520px !important;
+    min-height: 380px !important;
+  }
+  .global-moment-photo img {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
   .global-moment-photo::before { display: none; }
   .global-moment-content { padding: 56px 32px; }
   .global-moment-stats { gap: 24px; }
@@ -2175,7 +2184,12 @@ footer {
   .form-row { grid-template-columns: 1fr; }
 
   .global-moment { grid-template-columns: 1fr; }
-  .global-moment-photo { height: 320px; }
+  .global-moment-photo {
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+    max-height: 480px !important;
+    min-height: 360px !important;
+  }
   .global-moment-content { padding: 48px 24px; }
   .global-moment-stats { gap: 24px; }
 
@@ -2501,7 +2515,10 @@ footer {
     padding: 40px 20px !important;
   }
   .global-moment-photo {
-    height: 280px;
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+    max-height: 460px !important;
+    min-height: 360px !important;
   }
   .modal-box {
     border-radius: var(--radius-lg);
