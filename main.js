@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-        const response = await fetch('https://formsubmit.co/ajax/shorya95@gmail.com', {
+        const response = await fetch('https://formsubmit.co/ajax/iam@shoryarastogi.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
