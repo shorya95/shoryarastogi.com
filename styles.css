@@ -2296,6 +2296,27 @@ footer {
   margin-bottom: 12px;
 }
 
+.modal-copy-link {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-copy-link:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
 .modal-category-badge {
   font-size: 0.75rem;
   font-weight: 700;

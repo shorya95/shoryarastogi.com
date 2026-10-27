@@ -388,7 +388,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    function openModal(item) {
+    function openModal(item, opts = {}) {
+      currentItem = item;
       if (item.imageUrl) {
         modalHeroContainer.innerHTML = `<img src="${item.imageUrl}" alt="${item.name}" class="modal-hero-img" />`;
       } else {
@@ -440,12 +441,84 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      resetCopyBtn();
+
+      // Give each case study its own shareable URL (e.g. /#allsteps)
+      if (opts.updateUrl !== false && window.location.hash !== '#' + item.id) {
+        history.pushState({ project: item.id }, '', '#' + item.id);
+      }
+      document.title = item.name + ' — Shorya Rastogi';
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'view_case_study', { project_id: item.id, project_name: item.name });
+      }
     }
 
-    function closeModal() {
+    function closeModal(opts = {}) {
+      if (!modal.classList.contains('open')) return;
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
+      currentItem = null;
+      document.title = defaultTitle;
+
+      if (opts.updateUrl !== false && findProjectFromHash()) {
+        history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    // ── Deep links: open the case study named in the URL hash ──
+    let currentItem = null;
+    const defaultTitle = document.title;
+
+    function findProjectFromHash() {
+      const slug = decodeURIComponent(window.location.hash.replace(/^#\/?/, '')).toLowerCase();
+      if (!slug) return null;
+      return (window.portfolioData || []).find(p => p.id.toLowerCase() === slug) || null;
+    }
+
+    function syncModalWithUrl() {
+      const item = findProjectFromHash();
+      if (item) {
+        if (!currentItem || currentItem.id !== item.id) openModal(item, { updateUrl: false });
+      } else {
+        closeModal({ updateUrl: false });
+      }
+    }
+
+    window.addEventListener('popstate', syncModalWithUrl);
+    window.addEventListener('hashchange', syncModalWithUrl);
+
+    // ── Copy link button ──
+    const modalCopyLinkBtn = document.getElementById('modalCopyLinkBtn');
+    function resetCopyBtn() {
+      if (modalCopyLinkBtn) modalCopyLinkBtn.innerHTML = '<i class="fa-solid fa-link"></i> Copy link';
+    }
+    if (modalCopyLinkBtn) {
+      modalCopyLinkBtn.addEventListener('click', async () => {
+        if (!currentItem) return;
+        const url = window.location.origin + '/#' + currentItem.id;
+        try {
+          await navigator.clipboard.writeText(url);
+        } catch (err) {
+          const tmp = document.createElement('textarea');
+          tmp.value = url;
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand('copy');
+          tmp.remove();
+        }
+        modalCopyLinkBtn.innerHTML = '<i class="fa-solid fa-check"></i> Link copied';
+        setTimeout(resetCopyBtn, 2000);
+      });
+    }
+
+    // Opened from a shared link: put the portfolio behind the popup, then open it
+    const initialItem = findProjectFromHash();
+    if (initialItem) {
+      const portfolioSection = document.getElementById('portfolio');
+      if (portfolioSection) portfolioSection.scrollIntoView({ behavior: 'instant', block: 'start' });
+      openModal(initialItem, { updateUrl: false });
     }
 
     if (modalCloseBtn) {
