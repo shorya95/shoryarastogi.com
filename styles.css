@@ -2921,3 +2921,49 @@ footer { border-top: 1px solid var(--text-primary); }
   #contact .form-row { grid-template-columns: 1fr; gap: 0; }
   .ed-links a { font-size: 1.15rem; }
 }
+
+/* ══ CASE STUDY VIEWER — dark scheme (homepage stays light) ══ */
+#projectModal { background: rgba(17, 17, 17, 0.9); }
+#projectModal .modal-box {
+  background: #111111;
+  color: #F4F2EE;
+  --text-primary: #F4F2EE;
+  --text-secondary: #A8A49C;
+  --text-muted: #8A867E;
+  --border: rgba(244, 242, 238, 0.16);
+  --border-violet: rgba(244, 242, 238, 0.3);
+  --violet: #F4F2EE;
+  --violet-light: #F4F2EE;
+  --violet-dim: rgba(244, 242, 238, 0.08);
+  --bg-elevated: #1C1C1C;
+}
+#projectModal .cs-topbar { background: rgba(17, 17, 17, 0.88); }
+#projectModal .modal-title,
+#projectModal .cs-topbar-name,
+#projectModal .cs-next-btn { color: #F4F2EE; }
+#projectModal .modal-summary,
+#projectModal .modal-detailed-content { color: #D9D5CD; }
+#projectModal .modal-detailed-content h3,
+#projectModal .modal-detailed-content h4 { color: #F4F2EE; }
+#projectModal .btn-primary { background: #F4F2EE; color: #111111; border-color: #F4F2EE; }
+#projectModal .btn-primary:hover { color: #111111; }
+#projectModal .btn-outline,
+#projectModal .btn-secondary { color: #F4F2EE; border-color: rgba(244, 242, 238, 0.6); }
+#projectModal .btn-outline:hover,
+#projectModal .btn-secondary:hover { color: #F4F2EE; background: rgba(244, 242, 238, 0.1); border-color: #F4F2EE; }
+#projectModal .modal-close-btn,
+#projectModal .cs-back,
+#projectModal .modal-copy-link { color: #F4F2EE; }
+#projectModal .modal-close-btn { background: rgba(244, 242, 238, 0.08); }
+#projectModal .cs-back:hover,
+#projectModal .modal-copy-link:hover,
+#projectModal .modal-close-btn:hover { background: rgba(244, 242, 238, 0.14); }
+#projectModal .modal-skill-badge { color: #F4F2EE; background: rgba(244, 242, 238, 0.06); }
+#projectModal .cs-slide img { background: #1C1C1C; }
+#projectModal .cs-footer .btn-primary { color: #111111; }
+#projectModal .cs-footer {
+  background: transparent;
+  border-top: none;
+  max-width: 1280px;
+  margin: 0 auto;
+}
