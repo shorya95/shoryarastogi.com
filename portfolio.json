@@ -42,6 +42,74 @@
         "text": "Visit Site ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/emendo/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 914
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/03.jpg",
+        "label": "How I worked",
+        "w": 1600,
+        "h": 1051
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/04.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/05.jpg",
+        "label": "AI Estimate",
+        "w": 1600,
+        "h": 1611
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/06.jpg",
+        "label": "Project Management",
+        "w": 1600,
+        "h": 1611
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/07.jpg",
+        "label": "Financial Management",
+        "w": 1600,
+        "h": 1611
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/08.jpg",
+        "label": "Material Management",
+        "w": 1600,
+        "h": 1611
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/09.jpg",
+        "label": "Customer Relationship Management",
+        "w": 1600,
+        "h": 1611
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/10.jpg",
+        "label": "AI Project Assistant",
+        "w": 1600,
+        "h": 1783
+      },
+      {
+        "src": "assets/portfolio/case-studies/emendo/11.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -63,6 +131,104 @@
       "UX Research",
       "CRO Strategy",
       "Figma"
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 1086
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/03.jpg",
+        "label": "Empathize — research",
+        "w": 1600,
+        "h": 1429
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/04.jpg",
+        "label": "Pain points & persona",
+        "w": 1600,
+        "h": 1623
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/05.jpg",
+        "label": "Empathy map & user stories",
+        "w": 1600,
+        "h": 1589
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/06.jpg",
+        "label": "Journey map & problem",
+        "w": 1600,
+        "h": 1417
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/07.jpg",
+        "label": "Competition & IA",
+        "w": 1600,
+        "h": 1783
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/08.jpg",
+        "label": "User flow & wireframes",
+        "w": 1600,
+        "h": 1806
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/09.jpg",
+        "label": "High-fidelity prototype",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/10.jpg",
+        "label": "Colour & type",
+        "w": 1600,
+        "h": 1223
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/11.jpg",
+        "label": "Brand in print",
+        "w": 1600,
+        "h": 903
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/12.jpg",
+        "label": "Website",
+        "w": 1600,
+        "h": 1451
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/13.jpg",
+        "label": "Farmer profile page",
+        "w": 1600,
+        "h": 1337
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/14.jpg",
+        "label": "App — onboarding & sign-in",
+        "w": 1600,
+        "h": 1703
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/15.jpg",
+        "label": "App — discover",
+        "w": 1600,
+        "h": 1726
+      },
+      {
+        "src": "assets/portfolio/case-studies/farmsnation/16.jpg",
+        "label": "App — checkout & wallet",
+        "w": 1600,
+        "h": 1931
+      }
     ]
   },
   {
@@ -89,6 +255,62 @@
       "UI/UX Design",
       "Design Systems",
       "Figma"
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1531
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/05.jpg",
+        "label": "Merchandising",
+        "w": 1600,
+        "h": 971
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/06.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 971
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/07.jpg",
+        "label": "Product page",
+        "w": 1600,
+        "h": 1178
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1269
+      },
+      {
+        "src": "assets/portfolio/case-studies/krbnyc/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -115,6 +337,62 @@
       "UI/UX Design",
       "CRO Strategy",
       "Figma"
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/harbinger/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1514
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/05.jpg",
+        "label": "Merchandising",
+        "w": 1600,
+        "h": 938
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/06.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 938
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/07.jpg",
+        "label": "Product page",
+        "w": 1600,
+        "h": 1178
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/harbinger/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -140,6 +418,62 @@
       "Shopify Plus",
       "UI/UX Design",
       "Figma"
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1359
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/05.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 845
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/06.jpg",
+        "label": "Product page",
+        "w": 1600,
+        "h": 1085
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/07.jpg",
+        "label": "Story & collections",
+        "w": 1600,
+        "h": 845
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/tracyglover/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -166,6 +500,62 @@
       "UI/UX Design",
       "Design Systems",
       "Figma"
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1806
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/05.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 1851
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/06.jpg",
+        "label": "Product page & cart",
+        "w": 1600,
+        "h": 1623
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/07.jpg",
+        "label": "Brand story",
+        "w": 1600,
+        "h": 2240
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/08.jpg",
+        "label": "More pages",
+        "w": 1600,
+        "h": 1280
+      },
+      {
+        "src": "assets/portfolio/case-studies/schoellkopf/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -187,6 +577,62 @@
         "text": "Visit Store ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1359
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/05.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 845
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/06.jpg",
+        "label": "Product page",
+        "w": 1600,
+        "h": 1085
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/07.jpg",
+        "label": "Shop by occasion",
+        "w": 1600,
+        "h": 845
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/jiacollection/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -206,6 +652,68 @@
         "url": "https://www.protectmyshoes.com/",
         "text": "Visit Store ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/02.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/03.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 891
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/04.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/05.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1514
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/06.jpg",
+        "label": "Collection & product",
+        "w": 1600,
+        "h": 937
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/07.jpg",
+        "label": "Brand story",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/08.jpg",
+        "label": "Editorial imagery",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/09.jpg",
+        "label": "Community & collections",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/protectmyshoes/10.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
       }
     ]
   },
@@ -233,6 +741,86 @@
         "text": "Figma ↗",
         "isSecondary": true
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/paloma/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/04.jpg",
+        "label": "Homepage",
+        "w": 1600,
+        "h": 1440
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/05.jpg",
+        "label": "Navigation",
+        "w": 1600,
+        "h": 1394
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/06.jpg",
+        "label": "Collection page",
+        "w": 1600,
+        "h": 1223
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/07.jpg",
+        "label": "Product page & cart",
+        "w": 1600,
+        "h": 1726
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/08.jpg",
+        "label": "Meet Paloma",
+        "w": 1600,
+        "h": 1417
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/09.jpg",
+        "label": "Trade program",
+        "w": 1600,
+        "h": 1223
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/10.jpg",
+        "label": "Journal",
+        "w": 1600,
+        "h": 1783
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/11.jpg",
+        "label": "More pages",
+        "w": 1600,
+        "h": 1771
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/12.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1303
+      },
+      {
+        "src": "assets/portfolio/case-studies/paloma/13.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -253,6 +841,68 @@
         "url": "https://www.figma.com/proto/HY19fVc3HYcRdT8hlVPxpQ/Seta-SkinSeta-Skin?page-id=0%3A1&node-id=1-538&scaling=scale-down&mode=design&t=vj47oM5dPZErhm4T-1",
         "text": "View Prototype ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/setaskin/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 1088
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/03.jpg",
+        "label": "Page anatomy (1/2)",
+        "w": 1600,
+        "h": 2275
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/04.jpg",
+        "label": "Page anatomy (2/2)",
+        "w": 1600,
+        "h": 2114
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/05.jpg",
+        "label": "Above the fold",
+        "w": 1600,
+        "h": 1554
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/06.jpg",
+        "label": "Proof & trust",
+        "w": 1600,
+        "h": 1313
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/07.jpg",
+        "label": "Objection handling",
+        "w": 1600,
+        "h": 1038
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/08.jpg",
+        "label": "Two colour directions",
+        "w": 1600,
+        "h": 1617
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/09.jpg",
+        "label": "CRO checklist",
+        "w": 1600,
+        "h": 1355
+      },
+      {
+        "src": "assets/portfolio/case-studies/setaskin/10.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 869
       }
     ]
   },
@@ -278,6 +928,116 @@
         "text": "Visit Site ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/ufv/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 891
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1189
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1688
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/05.jpg",
+        "label": "Four programs, one comparable card",
+        "w": 1600,
+        "h": 1273
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/06.jpg",
+        "label": "Show the experience, not the syllabus",
+        "w": 1600,
+        "h": 1463
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/07.jpg",
+        "label": "Program page",
+        "w": 1600,
+        "h": 1605
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/08.jpg",
+        "label": "Faculty & courses",
+        "w": 1600,
+        "h": 1279
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/09.jpg",
+        "label": "Two campuses",
+        "w": 1600,
+        "h": 2118
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/10.jpg",
+        "label": "Transfer options & costs",
+        "w": 1600,
+        "h": 1909
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/11.jpg",
+        "label": "Student clubs",
+        "w": 1600,
+        "h": 2104
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/12.jpg",
+        "label": "Admissions",
+        "w": 1600,
+        "h": 1663
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/13.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1326
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/14.jpg",
+        "label": "Viewbook 2024–25",
+        "w": 1600,
+        "h": 1497
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/15.jpg",
+        "label": "Viewbook spreads (1/2)",
+        "w": 1600,
+        "h": 2229
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/16.jpg",
+        "label": "Viewbook spreads (2/2)",
+        "w": 1600,
+        "h": 2229
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/17.jpg",
+        "label": "Inside the viewbook",
+        "w": 1600,
+        "h": 1714
+      },
+      {
+        "src": "assets/portfolio/case-studies/ufv/18.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -298,6 +1058,98 @@
         "url": "https://www.chitkara.edu.in/global/",
         "text": "Visit Site ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/chitkara/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 891
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1189
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1439
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/05.jpg",
+        "label": "Every program, the same card",
+        "w": 1600,
+        "h": 1696
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/06.jpg",
+        "label": "Three reasons, said plainly",
+        "w": 1600,
+        "h": 1408
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/07.jpg",
+        "label": "Real faculty, real credentials",
+        "w": 1600,
+        "h": 877
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/08.jpg",
+        "label": "Partner page · Deakin",
+        "w": 1600,
+        "h": 1795
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/09.jpg",
+        "label": "Program page · Software Engineering",
+        "w": 1600,
+        "h": 1990
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/10.jpg",
+        "label": "Partner theming · George Brown",
+        "w": 1600,
+        "h": 1482
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/11.jpg",
+        "label": "About the partner",
+        "w": 1600,
+        "h": 1824
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/12.jpg",
+        "label": "Course structure",
+        "w": 1600,
+        "h": 1890
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/13.jpg",
+        "label": "FAQ",
+        "w": 1600,
+        "h": 1642
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/14.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/chitkara/15.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
       }
     ]
   },
@@ -340,6 +1192,62 @@
         "url": "https://jumptechsolutions.com/",
         "text": "Visit Site ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/jumptech/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1430
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/05.jpg",
+        "label": "Strategy",
+        "w": 1600,
+        "h": 1464
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/06.jpg",
+        "label": "Operating playbook",
+        "w": 1600,
+        "h": 1805
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/07.jpg",
+        "label": "Industries",
+        "w": 1600,
+        "h": 1704
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/jumptech/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
       }
     ]
   },
@@ -407,6 +1315,62 @@
         "text": "Visit Store ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 891
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1514
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/05.jpg",
+        "label": "Best-sellers & product page",
+        "w": 1600,
+        "h": 937
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/06.jpg",
+        "label": "New arrival & trust",
+        "w": 1600,
+        "h": 914
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/07.jpg",
+        "label": "Collections & press",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/brooklynbotany/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -427,6 +1391,68 @@
         "url": "https://evolutionofbreath.com/",
         "text": "Visit Site ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1843
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/05.jpg",
+        "label": "Curriculum",
+        "w": 1600,
+        "h": 1871
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/06.jpg",
+        "label": "Who it's for",
+        "w": 1600,
+        "h": 1642
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/07.jpg",
+        "label": "Locations & stories (1/2)",
+        "w": 1600,
+        "h": 1737
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/08.jpg",
+        "label": "Locations & stories (2/2)",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/09.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/evolutionofbreath/10.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
       }
     ]
   },
@@ -450,6 +1476,98 @@
         "text": "Figma ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/readynez/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/04.jpg",
+        "label": "Hero directions",
+        "w": 1600,
+        "h": 958
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/05.jpg",
+        "label": "The pages (1/2)",
+        "w": 1600,
+        "h": 1349
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/06.jpg",
+        "label": "The pages (2/2)",
+        "w": 1600,
+        "h": 1554
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/07.jpg",
+        "label": "Revised homepage",
+        "w": 1600,
+        "h": 1302
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/08.jpg",
+        "label": "Offers",
+        "w": 1600,
+        "h": 1741
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/09.jpg",
+        "label": "Courses & proof (1/2)",
+        "w": 1600,
+        "h": 1783
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/10.jpg",
+        "label": "Courses & proof (2/2)",
+        "w": 1600,
+        "h": 1280
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/11.jpg",
+        "label": "About page (1/2)",
+        "w": 1600,
+        "h": 1440
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/12.jpg",
+        "label": "About page (2/2)",
+        "w": 1600,
+        "h": 1189
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/13.jpg",
+        "label": "People",
+        "w": 1600,
+        "h": 2243
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/14.jpg",
+        "label": "Shared components",
+        "w": 1600,
+        "h": 1064
+      },
+      {
+        "src": "assets/portfolio/case-studies/readynez/15.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -471,6 +1589,62 @@
         "text": "Visit Site ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/enestit/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1430
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/05.jpg",
+        "label": "Services",
+        "w": 1600,
+        "h": 1545
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/06.jpg",
+        "label": "Proof",
+        "w": 1600,
+        "h": 1283
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/07.jpg",
+        "label": "Delivery governance",
+        "w": 1600,
+        "h": 1821
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/enestit/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -491,6 +1665,68 @@
         "url": "http://parkstone.sk/",
         "text": "Visit Site ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/parkstone/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/04.jpg",
+        "label": "Homepage — hero & trust",
+        "w": 1600,
+        "h": 1554
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/05.jpg",
+        "label": "Project showcase (1/2)",
+        "w": 1600,
+        "h": 1680
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/06.jpg",
+        "label": "Project showcase (2/2)",
+        "w": 1600,
+        "h": 1314
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/07.jpg",
+        "label": "Industries",
+        "w": 1600,
+        "h": 1554
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/08.jpg",
+        "label": "Mission & process",
+        "w": 1600,
+        "h": 2011
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/09.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/parkstone/10.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
       }
     ]
   },
@@ -514,6 +1750,62 @@
         "text": "Visit Site ↗",
         "isSecondary": false
       }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1663
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/05.jpg",
+        "label": "Services",
+        "w": 1600,
+        "h": 1397
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/06.jpg",
+        "label": "Proof",
+        "w": 1600,
+        "h": 1287
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/07.jpg",
+        "label": "The HiT model",
+        "w": 1600,
+        "h": 1595
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/08.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/rackpeople/09.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
+      }
     ]
   },
   {
@@ -535,6 +1827,104 @@
         "url": "https://bocahistory.org/",
         "text": "Visit Site ↗",
         "isSecondary": false
+      }
+    ],
+    "slides": [
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/01.jpg",
+        "label": "Cover",
+        "w": 1600,
+        "h": 1143
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/02.jpg",
+        "label": "The brief",
+        "w": 1600,
+        "h": 869
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/03.jpg",
+        "label": "Design foundations",
+        "w": 1600,
+        "h": 1234
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/04.jpg",
+        "label": "Homepage hero",
+        "w": 1600,
+        "h": 1387
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/05.jpg",
+        "label": "Exhibitions",
+        "w": 1600,
+        "h": 1422
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/06.jpg",
+        "label": "Community & support",
+        "w": 1600,
+        "h": 1397
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/07.jpg",
+        "label": "Upcoming events",
+        "w": 1600,
+        "h": 1402
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/08.jpg",
+        "label": "Guided tours",
+        "w": 1600,
+        "h": 2226
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/09.jpg",
+        "label": "Boca timeline",
+        "w": 1600,
+        "h": 2056
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/10.jpg",
+        "label": "Event calendar",
+        "w": 1600,
+        "h": 2214
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/11.jpg",
+        "label": "Museum Journal (1/2)",
+        "w": 1600,
+        "h": 1858
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/12.jpg",
+        "label": "Museum Journal (2/2)",
+        "w": 1600,
+        "h": 1808
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/13.jpg",
+        "label": "Membership (1/2)",
+        "w": 1600,
+        "h": 1701
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/14.jpg",
+        "label": "Membership (2/2)",
+        "w": 1600,
+        "h": 1593
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/15.jpg",
+        "label": "Responsive",
+        "w": 1600,
+        "h": 1257
+      },
+      {
+        "src": "assets/portfolio/case-studies/bocahistory/16.jpg",
+        "label": "Closing",
+        "w": 1600,
+        "h": 823
       }
     ]
   }

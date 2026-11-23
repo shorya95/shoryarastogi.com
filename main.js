@@ -73,10 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
             thumbHtml = `<div class="project-thumb-placeholder">${item.imagePlaceholder}</div>`;
           }
 
+          const slideCount = (item.slides || []).length;
+          const badgeHtml = slideCount > 1
+            ? `<span class="project-slide-count"><i class="fa-regular fa-images"></i> ${slideCount} slides</span>`
+            : '';
+
           const cardHtml = `
             <div class="project-card ${featuredClass}" data-category="${item.category}" id="card-${item.id}">
               <div class="project-thumb">
                 ${thumbHtml}
+                ${badgeHtml}
               </div>
               <div class="project-info">
                 <div class="project-name">${item.name}</div>
@@ -365,7 +371,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.getElementById('modalCloseBtn');
     if (!modal) return;
 
-    const modalHeroContainer = document.getElementById('modalHeroContainer');
+    const modalBox = document.getElementById('modalBox');
+    const modalTopName = document.getElementById('modalTopName');
+    const modalTopMeta = document.getElementById('modalTopMeta');
+    const csToc = document.getElementById('csToc');
+    const csSlides = document.getElementById('csSlides');
+    const csNextBtn = document.getElementById('csNextBtn');
+    const csNextWrap = document.getElementById('csNextWrap');
     const modalCategory = document.getElementById('modalCategory');
     const modalTitle = document.getElementById('modalTitle');
     const modalSummary = document.getElementById('modalSummary');
@@ -390,11 +402,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openModal(item, opts = {}) {
       currentItem = item;
-      if (item.imageUrl) {
-        modalHeroContainer.innerHTML = `<img src="${item.imageUrl}" alt="${item.name}" class="modal-hero-img" />`;
+
+      // Slides: the case study images, stacked in order (falls back to the card image)
+      let slides = item.slides && item.slides.length ? item.slides : [];
+      if (!slides.length && item.imageUrl) slides = [{ src: item.imageUrl, label: item.name }];
+      const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+      csSlides.innerHTML = slides.map((s, i) => {
+        const size = s.w && s.h ? ` width="${s.w}" height="${s.h}"` : '';
+        const loading = i < 2 ? 'eager' : 'lazy';
+        return `<figure class="cs-slide" id="cs-slide-${i + 1}"><img src="${s.src}" alt="${esc(item.name)} — ${esc(s.label || '')}"${size} loading="${loading}" decoding="async" /></figure>`;
+      }).join('');
+
+      if (slides.length > 2) {
+        csToc.innerHTML = '<span class="cs-toc-title">In this case study</span>' +
+          slides.map((s, i) => `<button type="button" data-slide="${i + 1}"><span>${String(i + 1).padStart(2, '0')}</span>${esc(s.label || 'Slide ' + (i + 1))}</button>`).join('');
+        csToc.style.display = '';
       } else {
-        modalHeroContainer.innerHTML = `<div class="modal-hero-placeholder">${item.imagePlaceholder || item.name}</div>`;
+        csToc.innerHTML = '';
+        csToc.style.display = 'none';
       }
+
+      // Next case study (in portfolio order, wrapping around)
+      const all = window.portfolioData || [];
+      const idx = all.findIndex(p => p.id === item.id);
+      const next = all.length > 1 ? all[(idx + 1) % all.length] : null;
+      if (next) {
+        csNextBtn.textContent = next.name + ' →';
+        csNextBtn.dataset.id = next.id;
+        csNextWrap.style.display = '';
+      } else {
+        csNextWrap.style.display = 'none';
+      }
+
+      if (modalBox) modalBox.scrollTop = 0;
 
       const categoryNames = {
         saas: 'SaaS & AI',
@@ -407,6 +447,9 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       modalCategory.textContent = categoryNames[item.category] || item.category;
       modalTitle.textContent = item.name;
+      modalTopName.textContent = item.name;
+      modalTopMeta.textContent = (categoryNames[item.category] || item.category) +
+        (slides.length > 1 ? ` · ${slides.length} slides` : '');
       modalSummary.textContent = item.description || '';
 
       if (item.skills && item.skills.length > 0) {
@@ -524,6 +567,45 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalCloseBtn) {
       modalCloseBtn.addEventListener('click', closeModal);
     }
+    const modalBackBtn = document.getElementById('modalBackBtn');
+    if (modalBackBtn) modalBackBtn.addEventListener('click', closeModal);
+
+    // Section list: scroll inside the viewer (no hash change, so the viewer stays open)
+    csToc.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-slide]');
+      if (!btn) return;
+      const target = document.getElementById('cs-slide-' + btn.dataset.slide);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Highlight the section currently in view
+    if ('IntersectionObserver' in window) {
+      const tocObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const n = entry.target.id.replace('cs-slide-', '');
+          csToc.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.slide === n));
+        });
+      }, { root: modalBox, rootMargin: '-30% 0px -60% 0px' });
+      new MutationObserver(() => {
+        tocObserver.disconnect();
+        csSlides.querySelectorAll('.cs-slide').forEach(f => tocObserver.observe(f));
+      }).observe(csSlides, { childList: true });
+    }
+
+    csNextBtn.addEventListener('click', () => {
+      const next = (window.portfolioData || []).find(p => p.id === csNextBtn.dataset.id);
+      if (next) openModal(next);
+    });
+
+    // "Start a project" buttons: close the viewer, go to the contact form
+    modal.querySelectorAll('[data-cs-contact]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        closeModal();
+        const contact = document.getElementById('contact');
+        if (contact) setTimeout(() => contact.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      });
+    });
 
     modal.addEventListener('click', (e) => {
       if (e.target === modal) {

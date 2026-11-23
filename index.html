@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20261027b" />
+  <link rel="stylesheet" href="styles.css?v=20261123" />
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Font Awesome -->
@@ -459,27 +459,50 @@
   <!-- ════════════════════════════════════════════════
        CASE STUDY MODAL POPUP
   ════════════════════════════════════════════════ -->
-  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-box">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
-      <div id="modalHeroContainer"></div>
-      <div class="modal-body">
-        <div class="modal-header-meta">
-          <span class="modal-category-badge" id="modalCategory">Category</span>
-          <button type="button" class="modal-copy-link" id="modalCopyLinkBtn" aria-label="Copy link to this case study"><i class="fa-solid fa-link"></i> Copy link</button>
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-box" id="modalBox">
+      <header class="cs-topbar">
+        <button type="button" class="cs-back" id="modalBackBtn"><i class="fa-solid fa-arrow-left"></i><span>All work</span></button>
+        <div class="cs-topbar-title">
+          <span class="cs-topbar-name" id="modalTopName"></span>
+          <span class="cs-topbar-meta" id="modalTopMeta"></span>
         </div>
+        <button type="button" class="modal-copy-link" id="modalCopyLinkBtn" aria-label="Copy link to this case study"><i class="fa-solid fa-link"></i> Copy link</button>
+        <button type="button" class="btn btn-primary btn-sm cs-cta" data-cs-contact>Start a project like this</button>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close case study"><i class="fa-solid fa-xmark"></i></button>
+      </header>
+
+      <div class="modal-body">
+        <span class="modal-category-badge" id="modalCategory">Category</span>
         <h2 class="modal-title" id="modalTitle">Project Title</h2>
-        <div class="modal-summary" id="modalSummary"></div>
-        <div class="modal-skills-section" id="modalSkillsSection" style="display:none;">
-          <div class="modal-skills-title">Skills &amp; Expertise</div>
-          <div class="modal-skills-list" id="modalSkillsList"></div>
+        <div class="cs-intro">
+          <div class="cs-intro-main">
+            <div class="modal-summary" id="modalSummary"></div>
+            <div class="modal-links" id="modalLinks"></div>
+          </div>
+          <div class="modal-skills-section" id="modalSkillsSection" style="display:none;">
+            <div class="modal-skills-title">Skills &amp; Expertise</div>
+            <div class="modal-skills-list" id="modalSkillsList"></div>
+          </div>
         </div>
         <div class="modal-detailed-content" id="modalDetailedContent" style="display:none;"></div>
-        <div class="modal-links" id="modalLinks"></div>
       </div>
+
+      <div class="cs-content">
+        <nav class="cs-toc" id="csToc" aria-label="Case study sections"></nav>
+        <div class="cs-slides" id="csSlides"></div>
+      </div>
+
+      <footer class="cs-footer">
+        <div class="cs-next" id="csNextWrap">
+          <span class="cs-next-label">Next case study</span>
+          <button type="button" class="cs-next-btn" id="csNextBtn"></button>
+        </div>
+        <button type="button" class="btn btn-primary" data-cs-contact>Get a Consultation</button>
+      </footer>
     </div>
   </div>
 
-  <script src="main.js?v=20261027b"></script>
+  <script src="main.js?v=20261123"></script>
 </body>
 </html>

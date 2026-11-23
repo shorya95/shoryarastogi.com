@@ -245,6 +245,8 @@ saveBtn.addEventListener('click', async () => {
   } else {
     const idx = newPortfolio.findIndex(p => p.id === updatedItem.id);
     if (idx !== -1) {
+      // The editor has no slides field: keep the case study slides already saved
+      if (newPortfolio[idx].slides) updatedItem.slides = newPortfolio[idx].slides;
       newPortfolio[idx] = updatedItem;
     }
   }
