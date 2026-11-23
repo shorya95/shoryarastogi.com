@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(data => {
         portfolioGrid.innerHTML = ''; // Clear loading state if any
-        data.forEach(item => {
+        const catLabels = { saas: 'SaaS & AI', interior: 'Interior & Decor', fashion: 'Fashion & Luxury', beauty: 'Wellness & Beauty', education: 'Education & EdTech', b2b: 'B2B & Enterprise', branding: 'Media' };
+        data.forEach((item, i) => {
           const featuredClass = '';
           
           let linksHtml = '';
@@ -79,14 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
             : '';
 
           const cardHtml = `
-            <div class="project-card ${featuredClass}" data-category="${item.category}" id="card-${item.id}">
+            <div class="project-card ${featuredClass}" role="button" tabindex="0" aria-label="Open ${item.name} case study" data-category="${item.category}" id="card-${item.id}">
               <div class="project-thumb">
                 ${thumbHtml}
                 ${badgeHtml}
               </div>
               <div class="project-info">
-                <div class="project-name">${item.name}</div>
-                <div class="project-desc">${item.description}</div>
+                <div class="project-info-text">
+                  <div class="project-name">${item.name}</div>
+                  <div class="project-cat">${catLabels[item.category] || item.category}</div>
+                </div>
+                <span class="project-num">${String(i + 1).padStart(2, '0')}</span>
               </div>
             </div>
           `;
@@ -111,115 +115,89 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function initPortfolioLogic() {
-    const tabBtns       = document.querySelectorAll('.tab-btn');
-    const projectCards  = document.querySelectorAll('.project-card');
-    const pagination    = document.getElementById('portfolioPagination');
-    const pagesEl       = document.getElementById('paginationPages');
-    const prevBtn       = document.getElementById('paginationPrev');
-    const nextBtn       = document.getElementById('paginationNext');
+    const track    = document.getElementById('pfTrack');
+    const prevBtn  = document.getElementById('pfPrev');
+    const nextBtn  = document.getElementById('pfNext');
+    const countEl  = document.getElementById('pfCount');
+    const barFill  = document.getElementById('pfBarFill');
+    const cards    = [...document.querySelectorAll('.project-card')];
+    if (!track) return;
 
-    const ITEMS_PER_PAGE = 4;
-    let currentFilter    = 'all';
-    let currentPage      = 1;
+    const visibleCards = () => cards.filter(c => !c.classList.contains('hidden'));
+    const step = () => {
+      const c = visibleCards()[0];
+      if (!c) return track.clientWidth;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return c.offsetWidth + gap;
+    };
+    const pad2 = n => String(n).padStart(2, '0');
 
-    function cardMatchesFilter(card) {
-      return currentFilter === 'all' || card.dataset.category === currentFilter;
-    }
-
-    function getFilteredCards() {
-      return [...projectCards].filter(cardMatchesFilter);
-    }
-
-    function renderPage() {
-      const filtered   = getFilteredCards();
-      const isAll      = currentFilter === 'all';
-      const totalPages = isAll ? Math.ceil(filtered.length / ITEMS_PER_PAGE) : 1;
-
-      currentPage = Math.min(Math.max(1, currentPage), totalPages);
-
-      const start = isAll ? (currentPage - 1) * ITEMS_PER_PAGE : 0;
-      const end   = isAll ? start + ITEMS_PER_PAGE : filtered.length;
-
-      const pageSlice = filtered.slice(start, end);
-
-      projectCards.forEach(card => {
-        const inFilter = cardMatchesFilter(card);
-        const idx      = filtered.indexOf(card);
-        const inPage   = idx >= start && idx < end;
-        const visible  = inFilter && inPage;
-
-        card.classList.toggle('hidden', !visible);
-
-        if (visible) {
-          const pageIdx = pageSlice.indexOf(card);
-          card.style.animationDelay = `${pageIdx * 0.06}s`;
-          card.style.animation = 'none';
-          card.offsetHeight;
-          card.style.animation = 'fadeInUp 0.45s ease forwards';
-        }
-      });
-
-      if (pagination) {
-        pagination.style.display = (isAll && totalPages > 1) ? 'flex' : 'none';
+    function update() {
+      const max = track.scrollWidth - track.clientWidth;
+      const total = visibleCards().length;
+      const s = step();
+      const first = Math.min(total, Math.round(track.scrollLeft / s) + 1);
+      const inView = Math.max(1, Math.floor((track.clientWidth - 40) / s));
+      const last = Math.min(total, first + inView - 1);
+      if (countEl) countEl.textContent = total ? `${pad2(first)}${last > first ? ' — ' + pad2(last) : ''} / ${pad2(total)}` : '';
+      if (barFill) {
+        const shown = track.clientWidth / Math.max(track.scrollWidth, 1);
+        const pos = max > 0 ? track.scrollLeft / max : 0;
+        barFill.style.width = (Math.min(1, shown) * 100) + '%';
+        barFill.style.left = (pos * (1 - Math.min(1, shown)) * 100) + '%';
       }
-
-      if (pagesEl) {
-        pagesEl.innerHTML = '';
-        for (let p = 1; p <= totalPages; p++) {
-          const dot = document.createElement('button');
-          dot.className = 'pagination-dot' + (p === currentPage ? ' active' : '');
-          dot.setAttribute('aria-label', `Page ${p}`);
-          dot.textContent = p;
-          dot.addEventListener('click', () => {
-            currentPage = p;
-            renderPage();
-            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-          });
-          pagesEl.appendChild(dot);
-        }
-      }
-
-      if (prevBtn) prevBtn.disabled = currentPage <= 1;
-      if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+      if (prevBtn) prevBtn.disabled = track.scrollLeft <= 4;
+      if (nextBtn) nextBtn.disabled = track.scrollLeft >= max - 4;
     }
 
-    tabBtns.forEach(btn => {
-      // Clean up previous event listeners if initialized multiple times
-      const newBtn = btn.cloneNode(true);
-      btn.parentNode.replaceChild(newBtn, btn);
-      newBtn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        newBtn.classList.add('active');
-        currentFilter = newBtn.dataset.filter;
-        currentPage   = 1;
-        renderPage();
+    prevBtn && prevBtn.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    nextBtn && nextBtn.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+    track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+    window.addEventListener('resize', update);
+    track.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); track.scrollBy({ left: step(), behavior: 'smooth' }); }
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); track.scrollBy({ left: -step(), behavior: 'smooth' }); }
+    });
+
+    // Drag to scroll with a mouse (touch already swipes natively)
+    let dragging = false, moved = false, startX = 0, startLeft = 0;
+    track.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      dragging = true; moved = false; startX = e.clientX; startLeft = track.scrollLeft;
+    });
+    window.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      if (!moved && Math.abs(dx) > 6) { moved = true; track.classList.add('is-dragging'); }
+      if (moved) track.scrollLeft = startLeft - dx;
+    });
+    window.addEventListener('pointerup', () => {
+      if (!dragging) return;
+      dragging = false;
+      track.classList.remove('is-dragging');
+    });
+    // A drag must not count as a click on a card
+    track.addEventListener('click', (e) => {
+      if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; }
+    }, true);
+    track.addEventListener('dragstart', e => e.preventDefault());
+
+    // Category filters
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.toggle('active', b === btn);
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+        const f = btn.dataset.filter;
+        cards.forEach(c => c.classList.toggle('hidden', !(f === 'all' || c.dataset.category === f)));
+        track.scrollTo({ left: 0 });
+        update();
       });
     });
 
-    if (prevBtn) {
-      const newPrev = prevBtn.cloneNode(true);
-      prevBtn.parentNode.replaceChild(newPrev, prevBtn);
-      newPrev.addEventListener('click', () => {
-        currentPage--;
-        renderPage();
-        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
-    
-    if (nextBtn) {
-      const newNext = nextBtn.cloneNode(true);
-      nextBtn.parentNode.replaceChild(newNext, nextBtn);
-      newNext.addEventListener('click', () => {
-        currentPage++;
-        renderPage();
-        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
-
-    renderPage();
+    update();
   }
-
-
 
   // ── CONTACT FORM ───────────────────────────────────────────
   const form = document.getElementById('contactForm');
@@ -399,6 +377,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach click listeners to cards
     document.querySelectorAll('.project-card').forEach(card => {
       card.style.cursor = 'pointer';
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+      });
       card.addEventListener('click', (e) => {
         if (e.target.closest('.project-link')) return;
 
