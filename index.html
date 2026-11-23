@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20261123f" />
+  <link rel="stylesheet" href="styles.css?v=20261123g" />
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Font Awesome -->
@@ -110,111 +110,72 @@
     </div>
   </section>
 
-  <div class="section-divider"></div>
 
 
   <!-- ════════════════════════════════════════════════
        ABOUT
   ════════════════════════════════════════════════ -->
-  <section id="about" aria-label="About Shorya">
+  <section id="about" class="ed-section" aria-label="About Shorya">
     <div class="container">
-
-      <div class="reveal">
-        <span class="section-label">About Me</span>
-        <h2 class="section-title">Designer, developer, co-founder.</h2>
-        <p class="section-subtitle">
-          Most designers design. Most developers develop. I do both — and I obsess over the bit in the middle where products actually succeed or fail.
-        </p>
+      <div class="ed-head reveal">
+        <span class="section-label">About</span>
+        <h2 class="ed-title">Designer, developer,<br>co-founder.</h2>
       </div>
 
-      <div class="about-grid">
-
-        <!-- LEFT: Photo Slider -->
-        <div class="about-photo-col reveal">
-          <div class="about-photo-wrap" id="aboutPhotoSlider">
-            <div class="about-slides-track">
-              <img class="about-slide active" src="assets/about-working.jpg" alt="Shorya working" loading="lazy" />
-              <img class="about-slide" src="assets/about-slide-2.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
-              <img class="about-slide" src="assets/about-slide-3.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
-              <img class="about-slide" src="assets/about-slide-4.jpg" alt="Shorya Rastogi portrait" loading="lazy" />
-            </div>
-            <!-- Slider Dots -->
-            <div class="about-slider-dots">
-              <span class="dot active" data-index="0"></span>
-              <span class="dot" data-index="1"></span>
-              <span class="dot" data-index="2"></span>
-              <span class="dot" data-index="3"></span>
-            </div>
-          </div>
-          <p class="about-photo-caption">Building &amp; shipping worldwide</p>
+      <div class="ed-split reveal">
+        <p class="ed-lead">Most designers design. Most developers develop. I do both — and I obsess over the bit in the middle where products actually succeed or fail.</p>
+        <div class="ed-body">
+          <p>My obsession with technology started back when the era of personal computers began — I've been a deep tech geek ever since. I started professionally building on the internet in 2012 — logos, websites, whatever clients needed. Over 12+ years, that curiosity compounded into a rare hybrid skill: I can sit with a founder, understand what they're trying to build, design the experience, write the code, and iterate until users love it.</p>
+          <p>I've been Co-Founder of two products (Allsteps.ai, Farmsnation), lead designer at an AI SaaS startup (Emendo), and the person behind high-converting Shopify stores for fashion and luxury brands in New York, LA, and Europe.</p>
+          <p>Today I use AI-accelerated workflows (Claude, Cursor AI) to compress timelines without cutting corners — shipping production-quality products in a fraction of the traditional time, giving clients a genuine competitive edge.</p>
         </div>
-
-        <!-- RIGHT: Text + Highlights + Skills -->
-        <div>
-          <div class="about-text reveal reveal-delay-1">
-            <p>
-              My obsession with technology started back when the era of personal computers began — I've been a deep tech geek ever since. I started professionally building on the internet in 2012 — logos, websites, whatever clients needed. Over 12+ years, that curiosity compounded into a rare hybrid skill: I can sit with a founder, understand what they're trying to build, design the experience, write the code, and iterate until users love it.
-            </p>
-            <p>
-              I've been Co-Founder of two products (Allsteps.ai, Farmsnation), lead designer at an AI SaaS startup (Emendo), and the person behind high-converting Shopify stores for fashion and luxury brands in New York, LA, and Europe.
-            </p>
-            <p>
-              Today I use AI-accelerated workflows (Claude, Cursor AI) to compress timelines without cutting corners — shipping production-quality products in a fraction of the traditional time, giving clients a genuine competitive edge.
-            </p>
-          </div>
-
-          <!-- Structured Skills Panel -->
-          <div class="skills-container reveal reveal-delay-2">
-            <div class="skills-grid">
-
-              <div class="skill-category">
-                <div class="skill-cat-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Design</div>
-                <div class="skill-pills">
-                  <span class="skill-pill">Figma</span>
-                  <span class="skill-pill">Adobe Photoshop</span>
-                  <span class="skill-pill">Generative AI</span>
-                  <span class="skill-pill">UI/UX Design</span>
-                  <span class="skill-pill">Design Systems</span>
-                  <span class="skill-pill">Usability Testing</span>
-                  <span class="skill-pill">UX Research</span>
-                </div>
-              </div>
-
-              <div class="skill-category">
-                <div class="skill-cat-title"><i class="fa-solid fa-code"></i> Development</div>
-                <div class="skill-pills">
-                  <span class="skill-pill">React / Next.js</span>
-                  <span class="skill-pill">Cursor AI</span>
-                  <span class="skill-pill">Shopify Plus</span>
-                  <span class="skill-pill">Shopify Apps</span>
-                  <span class="skill-pill">Webflow</span>
-                  <span class="skill-pill">Framer</span>
-                  <span class="skill-pill">WordPress</span>
-                  <span class="skill-pill">Elementor Pro</span>
-                </div>
-              </div>
-
-              <div class="skill-category">
-                <div class="skill-cat-title"><i class="fa-solid fa-chart-line"></i> Growth &amp; Marketing</div>
-                <div class="skill-pills">
-                  <span class="skill-pill">Programmatic SEO</span>
-                  <span class="skill-pill">SEO/SEM</span>
-                  <span class="skill-pill">CRO Strategy</span>
-                  <span class="skill-pill">A/B Testing</span>
-                  <span class="skill-pill">Marketing Ops</span>
-                  <span class="skill-pill">Conversion Funnels</span>
-                  <span class="skill-pill">Analytics</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-        <!-- END RIGHT -->
-
       </div>
 
+      <div class="ed-toolkit reveal">
+        <span class="section-label">Toolkit</span>
+        <div class="ed-cols">
+          <div class="ed-col">
+            <span class="ed-num">01</span>
+            <h3>Design</h3>
+            <ul class="ed-list">
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Generative AI</li>
+              <li>UI/UX Design</li>
+              <li>Design Systems</li>
+              <li>Usability Testing</li>
+              <li>UX Research</li>
+            </ul>
+          </div>
+          <div class="ed-col">
+            <span class="ed-num">02</span>
+            <h3>Development</h3>
+            <ul class="ed-list">
+              <li>React / Next.js</li>
+              <li>Cursor AI</li>
+              <li>Shopify Plus</li>
+              <li>Shopify Apps</li>
+              <li>Webflow</li>
+              <li>Framer</li>
+              <li>WordPress</li>
+              <li>Elementor Pro</li>
+            </ul>
+          </div>
+          <div class="ed-col">
+            <span class="ed-num">03</span>
+            <h3>Growth &amp; Marketing</h3>
+            <ul class="ed-list">
+              <li>Programmatic SEO</li>
+              <li>SEO/SEM</li>
+              <li>CRO Strategy</li>
+              <li>A/B Testing</li>
+              <li>Marketing Ops</li>
+              <li>Conversion Funnels</li>
+              <li>Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -225,39 +186,23 @@
   <!-- ════════════════════════════════════════════════
        GLOBALLY CURIOUS — Split Panel
   ════════════════════════════════════════════════ -->
-  <div class="global-moment">
-
-    <!-- LEFT: Text -->
-    <div class="global-moment-content">
-      <div class="global-moment-label">Building from anywhere</div>
-      <h3 class="global-moment-title">Globally curious.<br>Locally grounded.</h3>
-      <p class="global-moment-desc">
-        I work with clients from New York to Helsinki — building products that cross borders, solve real problems, and grow real businesses.
-      </p>
-      <div class="global-moment-stats">
-        <div>
-          <div class="global-moment-stat-num">12<span>+</span></div>
-          <div class="global-moment-stat-label">Countries worked with</div>
-        </div>
-        <div>
-          <div class="global-moment-stat-num">50<span>+</span></div>
-          <div class="global-moment-stat-label">Global brands served</div>
-        </div>
-        <div>
-          <div class="global-moment-stat-num">100<span>%</span></div>
-          <div class="global-moment-stat-label">Remote, async-ready</div>
-        </div>
+  <section id="global" class="ed-section" aria-label="Working worldwide">
+    <div class="container">
+      <div class="ed-head reveal">
+        <span class="section-label">Building from anywhere</span>
+        <h2 class="ed-title">Globally curious.<br>Locally grounded.</h2>
+      </div>
+      <div class="ed-split reveal">
+        <p class="ed-lead">I work with clients from New York to Helsinki — building products that cross borders, solve real problems, and grow real businesses.</p>
+        <div></div>
+      </div>
+      <div class="ed-cols ed-stats reveal">
+        <div class="ed-col"><span class="ed-stat-num">12+</span><span class="ed-stat-label">Countries worked with</span></div>
+        <div class="ed-col"><span class="ed-stat-num">50+</span><span class="ed-stat-label">Global brands served</span></div>
+        <div class="ed-col"><span class="ed-stat-num">100%</span><span class="ed-stat-label">Remote, async-ready</span></div>
       </div>
     </div>
-
-    <!-- RIGHT: Photo -->
-    <div class="global-moment-photo">
-      <img src="assets/globally-curious.jpg" alt="Shorya Rastogi - Globally Curious" loading="lazy" />
-    </div>
-
-  </div>
-
-
+  </section>
 
   <!-- ════════════════════════════════════════════════
        PORTFOLIO
@@ -266,8 +211,8 @@
     <div class="container">
       <div class="pf-head">
         <div class="pf-head-text">
-          <span class="section-label">Selected Works</span>
-          <h2 class="section-title pf-title">Work That Speaks for Itself</h2>
+          <span class="section-label">Selected work</span>
+          <h2 class="ed-title pf-title">Work that speaks<br>for itself.</h2>
         </div>
         <div class="pf-arrows">
           <button type="button" class="pf-arrow" id="pfPrev" aria-label="Previous projects" disabled><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -313,38 +258,26 @@
     </div>
   </section>
 
-  <div class="section-divider"></div>
 
 
   <!-- ════════════════════════════════════════════════
        CONTACT
   ════════════════════════════════════════════════ -->
-  <section id="contact" aria-label="Contact">
+  <section id="contact" class="ed-section" aria-label="Contact">
     <div class="container">
 
       <div class="contact-grid">
 
-        <!-- Left: Info & Trust Links -->
+        <!-- Left: Info & links -->
         <div class="reveal">
-          <span class="section-label">Let's Work Together</span>
-          <h2 class="section-title" style="margin-bottom: 16px;">Got a Project in Mind?</h2>
-          <p class="contact-info-text" style="margin-bottom: 28px; font-size: 1rem; line-height: 1.6;">
-            I respond within 24 hours with honest feedback &amp; a clear roadmap for your project.
-          </p>
+          <span class="section-label">Let's work together</span>
+          <h2 class="ed-title">Got a project<br>in mind?</h2>
+          <p class="ed-lead contact-lead">I respond within 24 hours with honest feedback &amp; a clear roadmap for your project.</p>
 
-          <div class="contact-links">
-            <a href="https://www.upwork.com/freelancers/~01ea2ee30a7c7c9653?mp_source=share" target="_blank" rel="noopener" class="contact-link" id="upwork-link">
-              <div class="contact-link-icon"><i class="fa-solid fa-laptop-code"></i></div>
-              Upwork Profile
-            </a>
-            <a href="https://www.behance.net/shorya95" target="_blank" rel="noopener" class="contact-link" id="behance-link">
-              <div class="contact-link-icon"><i class="fa-brands fa-behance"></i></div>
-              Behance Portfolio
-            </a>
-            <a href="https://www.fiverr.com/shorya95" target="_blank" rel="noopener" class="contact-link" id="fiverr-link">
-              <div class="contact-link-icon"><i class="fa-solid fa-briefcase"></i></div>
-              Fiverr (2,500+ reviews)
-            </a>
+          <div class="ed-links">
+            <a href="https://www.upwork.com/freelancers/~01ea2ee30a7c7c9653?mp_source=share" target="_blank" rel="noopener" id="upwork-link"><span>Upwork profile</span><span aria-hidden="true">↗</span></a>
+            <a href="https://www.behance.net/shorya95" target="_blank" rel="noopener" id="behance-link"><span>Behance portfolio</span><span aria-hidden="true">↗</span></a>
+            <a href="https://www.fiverr.com/shorya95" target="_blank" rel="noopener" id="fiverr-link"><span>Fiverr (2,500+ reviews)</span><span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -422,18 +355,10 @@
       <div class="footer-bottom">
         <p class="footer-copy">© 2026 Shorya Rastogi. Designed &amp; built with care.</p>
         <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/shorya-rastogi-217a0259/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.behance.net/shorya95" target="_blank" rel="noopener" class="footer-social-link" aria-label="Behance">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-          <a href="https://www.upwork.com/freelancers/~01ea2ee30a7c7c9653?mp_source=share" target="_blank" rel="noopener" class="footer-social-link" aria-label="Upwork">
-            <i class="fa-solid fa-laptop-code"></i>
-          </a>
-          <a href="https://www.fiverr.com/shorya95" target="_blank" rel="noopener" class="footer-social-link" aria-label="Fiverr">
-            <i class="fa-solid fa-briefcase"></i>
-          </a>
+          <a href="https://www.linkedin.com/in/shorya-rastogi-217a0259/" target="_blank" rel="noopener" class="footer-text-link">LinkedIn ↗</a>
+          <a href="https://www.behance.net/shorya95" target="_blank" rel="noopener" class="footer-text-link">Behance ↗</a>
+          <a href="https://www.upwork.com/freelancers/~01ea2ee30a7c7c9653?mp_source=share" target="_blank" rel="noopener" class="footer-text-link">Upwork ↗</a>
+          <a href="https://www.fiverr.com/shorya95" target="_blank" rel="noopener" class="footer-text-link">Fiverr ↗</a>
         </div>
       </div>
 
@@ -488,6 +413,6 @@
     </div>
   </div>
 
-  <script src="main.js?v=20261123f"></script>
+  <script src="main.js?v=20261123g"></script>
 </body>
 </html>

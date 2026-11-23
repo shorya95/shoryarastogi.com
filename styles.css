@@ -2735,3 +2735,189 @@ footer {
   #portfolio .pf-track .project-name { font-size: 1.25rem; }
   #portfolio .pf-hint { display: none; }
 }
+
+/* ══ EDITORIAL SYSTEM — shared by every section (matches the hero) ══ */
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.section-label::before { background: var(--text-secondary); }
+
+.ed-section { padding: 128px 0; }
+#portfolio { padding: 128px 0 112px; }
+
+.ed-title,
+#portfolio .pf-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 7vw, 6rem);
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.ed-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--text-primary);
+}
+.ed-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.2vw, 1.875rem);
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0;
+}
+.ed-body p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #444444;
+  margin: 0 0 18px;
+}
+.ed-body p:last-child { margin-bottom: 0; }
+
+.ed-toolkit { margin-top: 96px; }
+.ed-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+.ed-col {
+  border-top: 1px solid var(--text-primary);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ed-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+.ed-col h3 {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+.ed-list { list-style: none; margin: 0; padding: 0; }
+.ed-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.0625rem;
+  color: #333333;
+}
+
+.ed-stats { margin-top: 72px; }
+.ed-stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+.ed-stat-label { font-size: 1.0625rem; color: var(--text-secondary); }
+
+/* Portfolio: same heading + square-ish covers like the hero photo */
+#portfolio .pf-head {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--text-primary);
+  margin-bottom: 32px;
+}
+#portfolio .pf-track .project-thumb { border-radius: 4px; }
+#portfolio .pf-track .project-card:focus-visible { border-radius: 4px; }
+
+/* Contact */
+#contact .contact-grid { margin-top: 0; gap: 80px; }
+#contact .contact-lead { margin: 40px 0 0; padding-top: 32px; border-top: 1px solid var(--text-primary); }
+.ed-links { margin-top: 40px; border-top: 1px solid var(--border); }
+.ed-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: padding 0.25s ease;
+}
+.ed-links a:hover { padding-left: 8px; }
+
+#contact .contact-form {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+}
+#contact .form-row { gap: 32px; margin-bottom: 8px; }
+#contact .form-group { margin-bottom: 8px; gap: 2px; }
+#contact .form-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding-top: 14px;
+}
+#contact .form-input,
+#contact .form-select,
+#contact .form-textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-primary);
+  border-radius: 0;
+  padding: 12px 0;
+  font-size: 1.125rem;
+}
+#contact .form-select { background-position: right 4px center; }
+#contact .form-input:focus,
+#contact .form-select:focus,
+#contact .form-textarea:focus {
+  background-color: transparent;
+  border-bottom-width: 2px;
+  padding-bottom: 11px;
+}
+#contact .btn-submit { margin-top: 32px; min-height: 56px; }
+
+/* Footer */
+footer { border-top: 1px solid var(--text-primary); }
+.footer-socials { display: flex; flex-wrap: wrap; gap: 28px; }
+.footer-text-link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.footer-text-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .ed-split { grid-template-columns: 1fr; gap: 28px; }
+  .ed-split > div:empty { display: none; }
+  .ed-cols { grid-template-columns: 1fr; gap: 40px; }
+  #contact .contact-grid { grid-template-columns: 1fr; gap: 56px; }
+}
+@media (max-width: 768px) {
+  .ed-section, #portfolio { padding: 88px 0; }
+  .ed-toolkit { margin-top: 64px; }
+  .ed-col h3 { font-size: 1.75rem; }
+  .ed-stats { margin-top: 48px; }
+  #contact .form-row { grid-template-columns: 1fr; gap: 0; }
+  .ed-links a { font-size: 1.15rem; }
+}
