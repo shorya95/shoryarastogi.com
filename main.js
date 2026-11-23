@@ -94,6 +94,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         window.portfolioData = data;
+
+        // Category counts come from the data; hide categories with no projects
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          const f = btn.dataset.filter;
+          const n = f === 'all' ? data.length : data.filter(p => p.category === f).length;
+          const countEl = btn.querySelector('.tab-count');
+          if (countEl) countEl.textContent = n;
+          btn.style.display = n === 0 ? 'none' : '';
+        });
+
         initPortfolioLogic();
         initModalLogic();
       })

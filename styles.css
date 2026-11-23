@@ -1342,7 +1342,7 @@ img { max-width: 100%; display: block; }
 .project-thumb {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 7 / 5;
   overflow: hidden;
   background: var(--bg-surface);
 }
@@ -2536,8 +2536,8 @@ footer {
 /* Card badge: number of slides */
 .project-slide-count {
   position: absolute;
-  left: 12px;
-  bottom: 12px;
+  right: 12px;
+  top: 12px;
   display: inline-flex;
   align-items: center;
   gap: 6px;

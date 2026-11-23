@@ -1,31 +1,9 @@
 [
   {
-    "id": "allsteps",
-    "name": "Allsteps.ai",
-    "category": "saas",
-    "imageUrl": "assets/portfolio/1785050305476_Allsteps.jpg",
-    "imagePlaceholder": "ALLSTEPS",
-    "description": "Designed, built and shipped a live Shopify app solo using AI-accelerated dev. Automated CRO & SEO audit engine for merchants — from concept to live app in weeks.",
-    "links": [
-      {
-        "url": "https://apps.shopify.com/allsteps",
-        "text": "View App ↗",
-        "isSecondary": false
-      }
-    ],
-    "skills": [
-      "Shopify Apps",
-      "React / Next.js",
-      "Cursor AI",
-      "CRO Strategy",
-      "Programmatic SEO"
-    ]
-  },
-  {
     "id": "emendo",
     "name": "Emendo — AI Bookkeeping",
     "category": "saas",
-    "imageUrl": "assets/portfolio/1784967549969_Emendo.ai.jpg",
+    "imageUrl": "assets/portfolio/case-studies/emendo/01.jpg",
     "imagePlaceholder": "EMENDO",
     "description": "Full UX design for an AI bookkeeping assistant. Translated complex LLM outputs into intuitive financial dashboards for non-technical users.",
     "skills": [
@@ -116,7 +94,7 @@
     "id": "farmsnation",
     "name": "Farmsnation",
     "category": "saas",
-    "imageUrl": "assets/portfolio/1785050315683_Farmsnation.jpg",
+    "imageUrl": "assets/portfolio/case-studies/farmsnation/01.jpg",
     "imagePlaceholder": "FARMSNATION",
     "description": "Co-founded a farm-to-consumer marketplace. Led UX strategy, product roadmap, and logistics flows from zero to launch.",
     "links": [
@@ -235,7 +213,7 @@
     "id": "krbnyc",
     "name": "KRB NYC",
     "category": "interior",
-    "imageUrl": "assets/portfolio/1785048097926_KRBNYC.jpg",
+    "imageUrl": "assets/portfolio/case-studies/krbnyc/01.jpg",
     "imagePlaceholder": "KRB NYC",
     "description": "Custom Shopify theme design for a luxury New York fashion label. Focused on editorial storytelling and conversion-optimized product pages.",
     "links": [
@@ -317,7 +295,7 @@
     "id": "harbinger",
     "name": "Harbinger LA",
     "category": "interior",
-    "imageUrl": "assets/portfolio/1785049891414_Harbinger-LA-NY.jpg",
+    "imageUrl": "assets/portfolio/case-studies/harbinger/01.jpg",
     "imagePlaceholder": "HARBINGER",
     "description": "Premium Shopify theme for a luxury LA interior design brand. Clean, bold aesthetic with strong visual hierarchy and seamless checkout flow.",
     "links": [
@@ -399,7 +377,7 @@
     "id": "tracyglover",
     "name": "Tracy Glover Studio",
     "category": "interior",
-    "imageUrl": "assets/portfolio/1785049869997_TracyGloverStudio.jpg",
+    "imageUrl": "assets/portfolio/case-studies/tracyglover/01.jpg",
     "imagePlaceholder": "TRACY GLOVER",
     "description": "Custom Shopify experience for an artisan lighting studio. Designed to showcase handcrafted product photography with an elegant, gallery-quality feel.",
     "links": [
@@ -480,7 +458,7 @@
     "id": "schoellkopf",
     "name": "Schoellkopf 1844",
     "category": "interior",
-    "imageUrl": "assets/portfolio/1785049880456_Schoellkopf1844.jpg",
+    "imageUrl": "assets/portfolio/case-studies/schoellkopf/01.jpg",
     "imagePlaceholder": "SCHOELLKOPF",
     "description": "E-commerce design for one of America's oldest heritage brands. Balanced historical gravitas with modern shopping UX.",
     "links": [
@@ -562,7 +540,7 @@
     "id": "jiacollection",
     "name": "Jia Collection",
     "category": "fashion",
-    "imageUrl": "assets/portfolio/1785139258582_JiaCollection.jpg",
+    "imageUrl": "assets/portfolio/case-studies/jiacollection/01.jpg",
     "imagePlaceholder": "JIA",
     "description": "Shopify design for a premium jewellery brand. Elegant visual design system focused on product storytelling and trust-building for high-AOV purchases.",
     "detailedContent": "",
@@ -639,7 +617,7 @@
     "id": "protectmyshoes",
     "name": "Protect My Shoes",
     "category": "fashion",
-    "imageUrl": "assets/portfolio/1785139270667_PMS.jpg",
+    "imageUrl": "assets/portfolio/case-studies/protectmyshoes/01.jpg",
     "imagePlaceholder": "PROTECT MY SHOES",
     "description": "Full brand identity + Shopify store for a sneaker care brand. Created branding, design system, and conversion-optimised storefront.",
     "detailedContent": "",
@@ -721,7 +699,7 @@
     "id": "paloma",
     "name": "Paloma & Co",
     "category": "interior",
-    "imageUrl": "assets/portfolio/1785050924749_Paloma.jpg",
+    "imageUrl": "assets/portfolio/case-studies/paloma/01.jpg",
     "imagePlaceholder": "PALOMA & CO",
     "description": "Warm, editorial Shopify experience for a lifestyle beauty brand. Designed to evoke personal connection and drive repeat purchases.",
     "detailedContent": "",
@@ -827,7 +805,7 @@
     "id": "setaskin",
     "name": "Seta Skin",
     "category": "beauty",
-    "imageUrl": "assets/portfolio/1785160557180_SetaSkin.jpg",
+    "imageUrl": "assets/portfolio/case-studies/setaskin/01.jpg",
     "imagePlaceholder": "SETA SKIN",
     "description": "Premium skincare brand UI design. Minimal, clinical aesthetic with strong conversion intent — designed to build trust for DTC skincare.",
     "detailedContent": "",
@@ -910,7 +888,7 @@
     "id": "ufv",
     "name": "UFV India",
     "category": "education",
-    "imageUrl": "assets/portfolio/1785165842201_FVI.jpg",
+    "imageUrl": "assets/portfolio/case-studies/ufv/01.jpg",
     "imagePlaceholder": "UFV INDIA",
     "description": "Full website design and development for UFV India — a Canadian university's India gateway. Structured for international student lead generation.",
     "detailedContent": "",
@@ -1044,7 +1022,7 @@
     "id": "chitkara",
     "name": "Chitkara Global",
     "category": "education",
-    "imageUrl": "assets/portfolio/1785165507359_ChitkaraUniversity.jpg",
+    "imageUrl": "assets/portfolio/case-studies/chitkara/01.jpg",
     "imagePlaceholder": "CHITKARA",
     "description": "Global outreach website for Chitkara University — designed to communicate international programs and drive student applications.",
     "detailedContent": "",
@@ -1154,31 +1132,10 @@
     ]
   },
   {
-    "id": "lyralab",
-    "name": "Lyra Labs",
-    "category": "b2b",
-    "imageUrl": "assets/portfolio/1785175334334_LyraLabs.jpg",
-    "imagePlaceholder": "LYRA LABS",
-    "description": "Designed and developed a clean, high-conversion site for a tech startup — focused on clearly communicating product value to B2B buyers.",
-    "detailedContent": "",
-    "skills": [
-      "UI/UX Design",
-      "WordPress",
-      "Elementor Pro"
-    ],
-    "links": [
-      {
-        "url": "https://lyralab.com/",
-        "text": "Visit Site ↗",
-        "isSecondary": false
-      }
-    ]
-  },
-  {
     "id": "jumptech",
     "name": "Jump Tech Solutions",
     "category": "b2b",
-    "imageUrl": "assets/portfolio/1785175345970_JumpTechSolutions.jpg",
+    "imageUrl": "assets/portfolio/case-studies/jumptech/01.jpg",
     "imagePlaceholder": "JUMP TECH",
     "description": "Webflow website for a technology solutions company — professional, trust-building design targeting enterprise clients.",
     "detailedContent": "",
@@ -1252,55 +1209,10 @@
     ]
   },
   {
-    "id": "premierattire",
-    "name": "Premier Attire",
-    "category": "fashion",
-    "imageUrl": "assets/portfolio/1785139286539_PremierAttire.jpg",
-    "imagePlaceholder": "PREMIER ATTIRE",
-    "description": "Complete brand identity and style guideline for a premium fashion label. Logo, colour system, typography, and brand voice.",
-    "detailedContent": "",
-    "skills": [
-      "Figma",
-      "Adobe Photoshop"
-    ],
-    "links": [
-      {
-        "url": "https://www.behance.net/gallery/168932523/Premier-Attire-Branding",
-        "text": "View on Behance ↗",
-        "isSecondary": false
-      }
-    ]
-  },
-  {
-    "id": "politicl",
-    "name": "Politicl",
-    "category": "branding",
-    "imageUrl": "assets/portfolio/1785175980652_Getpoliticl.jpg",
-    "imagePlaceholder": "POLITICL",
-    "description": "Brand identity and social media design system for Politicl — a political content brand. Bold visual language built for high-scroll engagement.",
-    "detailedContent": "",
-    "skills": [
-      "Figma",
-      "Adobe Photoshop"
-    ],
-    "links": [
-      {
-        "url": "https://www.behance.net/gallery/168933149/Politicl-Branding-Social-Media",
-        "text": "Behance ↗",
-        "isSecondary": false
-      },
-      {
-        "url": "https://www.instagram.com/politicldotcom/",
-        "text": "Instagram ↗",
-        "isSecondary": true
-      }
-    ]
-  },
-  {
     "id": "brooklynbotany",
     "name": "Brooklyn Botany",
     "category": "beauty",
-    "imageUrl": "assets/portfolio/1785162715954_BrooklynBotany.jpg",
+    "imageUrl": "assets/portfolio/case-studies/brooklynbotany/01.jpg",
     "imagePlaceholder": "BROOKLYN BOTANY",
     "description": "Shopify e-commerce store for a premium botanical skincare and personal care brand.",
     "detailedContent": "<h3>E-Commerce Experience</h3><p>Designed and built a clean Shopify storefront for Brooklyn Botany, highlighting natural ingredients and optimizing for high mobile conversion.</p>",
@@ -1377,7 +1289,7 @@
     "id": "evolutionofbreath",
     "name": "Evolution of Breath",
     "category": "beauty",
-    "imageUrl": "assets/portfolio/1785162942669_EvolutionofBreathe.jpg",
+    "imageUrl": "assets/portfolio/case-studies/evolutionofbreath/01.jpg",
     "imagePlaceholder": "EOB",
     "description": "Custom Webflow platform for breathwork and wellness experiences. Clean, calming aesthetic built for brand immersion and bookings.",
     "detailedContent": "<h3>Wellness Experience Design</h3><p>Crafted an immersive Webflow web application for Evolution of Breath, featuring serene visual layouts, event booking integration, and custom animations.</p>",
@@ -1460,7 +1372,7 @@
     "id": "readynez",
     "name": "Readynez",
     "category": "education",
-    "imageUrl": "assets/portfolio/1785166033099_Readynez.jpg",
+    "imageUrl": "assets/portfolio/case-studies/readynez/01.jpg",
     "imagePlaceholder": "READYNEZ",
     "description": "UI/UX and Webflow digital design system for an IT training and certification platform.",
     "detailedContent": "<h3>EdTech Design System</h3><p>Architected a high-scalability UI design system and Webflow layout for Readynez IT training, improving course discovery and conversion flows.</p>",
@@ -1574,7 +1486,7 @@
     "id": "enestit",
     "name": "eNest IT",
     "category": "b2b",
-    "imageUrl": "assets/portfolio/1785175363364_eNestIT.jpg",
+    "imageUrl": "assets/portfolio/case-studies/enestit/01.jpg",
     "imagePlaceholder": "ENEST IT",
     "description": "Custom WordPress corporate website for an IT services and software development agency.",
     "detailedContent": "<h3>Agency Platform Design</h3><p>Designed and deployed a responsive corporate WordPress website for eNest IT to showcase technical capabilities and generate B2B inbound leads.</p>",
@@ -1651,7 +1563,7 @@
     "id": "parkstone",
     "name": "Parkstone",
     "category": "b2b",
-    "imageUrl": "assets/portfolio/1785175381887_Parkstone.jpg",
+    "imageUrl": "assets/portfolio/case-studies/parkstone/01.jpg",
     "imagePlaceholder": "PARKSTONE",
     "description": "Modern Webflow corporate site for European real estate investment and development firm Parkstone.",
     "detailedContent": "<h3>Real Estate Platform</h3><p>Built a luxury B2B Webflow web experience for Parkstone, emphasizing portfolio showcase and architectural project visual presentation.</p>",
@@ -1734,7 +1646,7 @@
     "id": "rackpeople",
     "name": "RackPeople",
     "category": "b2b",
-    "imageUrl": "assets/portfolio/1785179320560_RackPeople.jpg",
+    "imageUrl": "assets/portfolio/case-studies/rackpeople/01.jpg",
     "imagePlaceholder": "RACKPEOPLE",
     "description": "Custom Figma UI design and WordPress Elementor development for Denmark-based IT infrastructure & cloud server solutions provider.",
     "detailedContent": "<h3>IT Infrastructure Platform</h3><p>Designed on Figma and custom-developed on WordPress using Elementor Pro for Denmark's RackPeople. Built to highlight enterprise server hosting, cloud infrastructure, and technical IT services with clear B2B conversion paths.</p>",
@@ -1812,7 +1724,7 @@
     "id": "bocahistory",
     "name": "Boca History",
     "category": "education",
-    "imageUrl": "assets/portfolio/1785179691637_BocaRaton.jpg",
+    "imageUrl": "assets/portfolio/case-studies/bocahistory/01.jpg",
     "imagePlaceholder": "BOCA HISTORY",
     "description": "Figma UI/UX design & WordPress Elementor site for the Boca Raton Historical Society & Schmidt Boca Raton History Museum.",
     "detailedContent": "<h3>Historical Museum Platform</h3><p>Designed on Figma and built on WordPress with Elementor Pro for the Boca Raton Historical Society & Museum in Florida. Created an engaging digital experience for exhibit showcases, historical archives, educational programs, and event ticketing.</p>",
