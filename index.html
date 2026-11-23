@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20261123c" />
+  <link rel="stylesheet" href="styles.css?v=20261123d" />
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <!-- Font Awesome -->
@@ -38,6 +38,9 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <a href="#hero" class="nav-logo">Shorya.</a>
     <ul class="nav-links">
+      <li><a href="#portfolio" class="nav-link">Work</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
       <li><a href="#contact" class="nav-cta">Get a Consultation</a></li>
     </ul>
     <div class="nav-hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
@@ -47,6 +50,9 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="#portfolio" class="nav-link">Work</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="experience.html" class="nav-link">Experience</a>
     <a href="#contact" class="btn-primary" style="margin-top:16px">Get a Consultation →</a>
   </div>
 
@@ -55,57 +61,56 @@
        HERO
   ════════════════════════════════════════════════ -->
   <section id="hero" aria-label="Hero">
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
-    <div class="hero-blob hero-blob-3"></div>
-
     <div class="container">
-      <div class="hero-inner">
-        <!-- LEFT: Text Content -->
-        <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Available for new projects
+      </div>
 
-          <div class="hero-badge">
-            <span class="hero-badge-dot"></span>
-            Available for new projects
-          </div>
+      <h1 class="hero-title">The designer<br>who ships.</h1>
 
-          <h1 class="hero-title">
-            I Design, Build &amp;<br>
-            Ship&nbsp;<span class="accent" id="heroSubtext">SaaS Products</span>
-            <br>
-            <span class="line-2">that Actually Convert.</span>
-          </h1>
-
+      <div class="hero-intro">
+        <div class="hero-intro-text">
           <p class="hero-description">
-            Senior Product Designer &amp; AI-Powered Developer with 12+ years turning ideas into 
-            revenue-generating digital products. From UX architecture to full-stack production — 
-            one person, full ownership, real results.
+            Senior Product Designer &amp; AI-Powered Developer with 12+ years turning ideas into
+            revenue-generating digital products. Shopify stores, SaaS products and websites,
+            from the first Figma frame to the live launch.
           </p>
-
           <div class="hero-actions">
             <a href="#portfolio" class="btn-primary" id="view-work-btn">
-              View My Work
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              See the work
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a href="#contact" class="btn-secondary" id="consultation-btn">
-              Get a Free Consultation
-            </a>
+            <a href="#contact" class="btn-secondary" id="consultation-btn">Book a free call</a>
           </div>
-
         </div>
-        <!-- END LEFT -->
+        <dl class="hero-stats">
+          <div><dt>Experience</dt><dd>12+ yrs</dd></div>
+          <div><dt>Brands</dt><dd>50+</dd></div>
+          <div><dt>Status</dt><dd>Available</dd></div>
+        </dl>
+      </div>
 
-        <!-- RIGHT: Photo -->
-        <div class="hero-photo-wrap">
-          <div class="hero-photo-frame">
-            <img src="assets/hero-portrait.jpg" alt="Shorya Rastogi working at Bombay Cafe" fetchpriority="high" decoding="async" />
-            <div class="hero-photo-badge">
-              <span class="hero-photo-badge-dot"></span>
-              <div class="hero-photo-badge-text">Open to work</div>
-            </div>
+      <figure class="hero-photo">
+        <img src="assets/hero-portrait.jpg" alt="Shorya Rastogi working on a laptop at Bombay Cafe" fetchpriority="high" decoding="async" />
+      </figure>
+
+      <div class="hero-services">
+        <div class="hero-service">
+          <span class="hero-service-num">01</span>
+          <h3>Design</h3>
+          <p>UI/UX, design systems and UX research in Figma, tested with real users.</p>
         </div>
-        <!-- END RIGHT -->
-
+        <div class="hero-service">
+          <span class="hero-service-num">02</span>
+          <h3>Build</h3>
+          <p>Shopify Plus, Webflow, Framer, WordPress and React / Next.js, shipped with AI-accelerated workflows.</p>
+        </div>
+        <div class="hero-service">
+          <span class="hero-service-num">03</span>
+          <h3>Grow</h3>
+          <p>CRO, A/B testing, SEO and conversion funnels that keep the product earning after launch.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -121,7 +126,7 @@
 
       <div class="reveal">
         <span class="section-label">About Me</span>
-        <h2 class="section-title">The Designer Who Ships</h2>
+        <h2 class="section-title">Designer, developer, co-founder.</h2>
         <p class="section-subtitle">
           Most designers design. Most developers develop. I do both — and I obsess over the bit in the middle where products actually succeed or fail.
         </p>
@@ -488,6 +493,6 @@
     </div>
   </div>
 
-  <script src="main.js?v=20261123c"></script>
+  <script src="main.js?v=20261123d"></script>
 </body>
 </html>
