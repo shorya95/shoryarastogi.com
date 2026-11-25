@@ -178,6 +178,17 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   color: var(--text-primary);
   font-style: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
 }
 
 .nav-links {
