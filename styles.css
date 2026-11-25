@@ -365,7 +365,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-photo {
   margin: 56px 0 0;
-  height: clamp(320px, 46vw, 680px);
+  aspect-ratio: 1797 / 985;
   border-radius: 4px;
   overflow: hidden;
   background: var(--bg-elevated);
@@ -376,6 +376,10 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
   object-position: center center;
   display: block;
+}
+@media (max-width: 768px) {
+  .hero-photo { aspect-ratio: auto; height: 360px; }
+  .hero-photo img { object-position: 45% center; }
 }
 
 .hero-services {
