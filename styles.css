@@ -178,17 +178,6 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   color: var(--text-primary);
   font-style: normal;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-.nav-avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  flex-shrink: 0;
 }
 
 .nav-links {
@@ -2017,12 +2006,9 @@ footer {
   .nav.scrolled { padding: 12px 20px; }
   .nav-links { display: flex !important; }
   .nav-cta {
-    padding: 8px 14px !important;
+    padding: 8px 16px !important;
     font-size: 0.8125rem !important;
-    white-space: nowrap;
   }
-  .nav-logo { gap: 8px; font-size: 1.2rem; }
-  .nav-avatar { width: 28px; height: 28px; }
   .nav-hamburger { display: none !important; }
 
   .nav-links .nav-link { display: none; }
